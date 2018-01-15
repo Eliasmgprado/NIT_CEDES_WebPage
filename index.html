@@ -5,57 +5,368 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="CPRM.ico">
 
     <title>Starter Template for Bootstrap</title>
-
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/mdb.min.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
   </head>
 
   <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand mb-0 h1" href="#">
+              <img src="/png/logo_empresa.png" width="45" height="35" 
+              class="d-inline-block align-top mr-2" alt="">
+            ICT-NIT-CEDES
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main role="main">
+      <!-- first image - Carousel -->
+      <div id="topbarCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#topbarCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#topbarCarousel" data-slide-to="1"></li>
+          <li data-target="#topbarCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#objetivosCont">
+              <img class="d-block w-100" src="/png/FP_figure-01.png" alt="First slide">
+            
+              <div class="carousel-caption d-none d-md-block text-left">
+                <h1>Conheça o Centro de Desenvolvimento Tecnológico do Serviço Geológico do Brasil</h1>
+                <p>
+                  Instituição de Ciência e Tecnologia
+                  <br/>
+                  Núcleo de Inovação e Tecnologia
+                  <br/>
+                  Centro de Desenvolvimento Tecnológico
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/png/FP_figure-01.png" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>ICT - NIT - CEDES</h5>
+                <p>Instituição de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/png/FP_figure-01.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>ICT - NIT - CEDES</h5>
+                <p>Instituição de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#topbarCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#topbarCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </nav>
 
-    <main role="main" class="container">
+      <!-- Main Container -->
+      <div class="container">
+        <!-- Publications -->
+        <section id="PublicacoesCont">
+          <div class="container">
+            <a href="#!">
+              <h2 class="display__title h2"> Publicações </h2>  
+            </a>
+            <div class="row">
+              <div class="col-sm-12">
+                  <div class="card hoverable">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="view overlay hm-white-slight card-img-div">
+                          <div class="card-image">
+                            <img class="card-img-top img-center" src="imgs/Pub_1.jpg" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="card-body px-1">
+                            
+                          <h5 class="card-title mb-0">Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação</h5>
+                          <hr>
+                          <p class="card-text text-justify"><span class="font-weight-bold">Abstract: </span>Donec sed odio dui. 
+                            Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Donec sed odio dui. 
+                            Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Donec sed odio dui. 
+                            Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Donec sed odio dui. 
+                            Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Donec sed odio dui. 
+                            Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Donec sed odio dui. 
+                            Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. 
+                            
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <!-- Publications -->
+
+        <!-- Publications -->
+        <section id="PublicacoesCont_2">
+          <div class="container">
+            <a href="#!">
+              <h2 class="display__title h2"> Publicações </h2>  
+            </a>
+            <div class="row">
+              <div class="col-sm-4">
+                  <div class="card card-cascade wider hoverable">
+                    <div class="view overlay hm-white-slight card-img-div">
+                      <div class="card-image">
+                        <img class="card-img-top img-center" src="imgs/Pub_1.jpg" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="card-body">
+                        
+                      <h5 class="card-title">Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação</h5>
+                      
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card card-cascade wider hoverable">
+                  <div class="view overlay hm-white-slight card-img-div">
+                    <div class="card-image">
+                      <img class="card-img-top img-center" src="imgs/Pub_2.png" alt="Card image cap">
+                      <a href="#!">
+                          <div class="mask"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Titulo Publicação</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card card-cascade wider hoverable">
+                  <div class="view overlay hm-white-slight card-img-div">
+                    <div class="card-image">
+                      <img class="card-img-top img-center" src="imgs/Pub_3.jpg" alt="Card image cap">
+                      <a href="#!">
+                          <div class="mask"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Titulo Publicação</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Publications -->
+        <!-- Objetives -->
+        <section id="objetivosCont">
+          <div class="container">
+            <div class="row text-center h2 mb-4">
+              <div class="col-sm">
+                Objetivos
+              </div>
+            </div>
+            <div class="row text-justify">
+              <div class="col-sm-4">
+                <img class="d-block mx-auto" src="svg/earth.svg" width="140" height="140">
+                <h3 class="text-center">Objetivo 1</h3>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <img class="d-block mx-auto" src="svg/light-bulb.svg" width="140" height="140">
+                <h3 class="text-center">Objetivo 2</h3>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <img class="d-block mx-auto" src="svg/hand-shake.svg" width="140" height="140">
+                <h3 class="text-center">Objetivo 3</h3>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Objetives -->
+
+        <hr>
+        <!-- Lines of Research -->
+        <section id="linhasPesquisaCont">
+          <div class="container">
+            <div class="row text-center h2 mb-4">
+              <div class="col-sm">
+                Linhas de Pesquisa
+              </div>
+            </div>
+            <div class="row text-justify">
+              <div class="col-lg-2">
+                <div class="container hexagon-bg text-center px-0 mb-3">
+                  <a href="#">
+                    <h5 class="text-center text-light">Tectônica Continental e Análise de Bacias</h5>
+                  </a>
+                </div>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="container hexagon-bg text-center px-0 mb-3">
+                  <a href="#">
+                    <h5 class="text-center text-light">Geodinâmica Equatorial e Atlântico Sul</h5>
+                  </a>
+                </div>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="container hexagon-bg text-center px-0 mb-3">
+                  <a href="#">
+                    <h5 class="text-center text-light">Geodiversidade e Impactos Ambientais</h5>
+                  </a>
+                </div>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="container hexagon-bg text-center px-0 mb-3">
+                  <a href="#">
+                    <h5 class="text-center text-light">Arquitetura da Litosfera e Processos Mineralizantes</h5>
+                  </a>
+                </div>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="container hexagon-bg text-center px-0 mb-3">
+                  <a href="#">
+                    <h5 class="text-center text-light">Big Data e Modelos Numéricos em Processos Geológicos</h5>
+                  </a>
+                </div>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="container hexagon-bg text-center px-0 mb-3">
+                  <a href="#">
+                    <h5 class="text-center text-light">Fontes Energéticas Alternativas e Minerais do Futuro</h5>
+                  </a>
+                </div>
+                <p>
+                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Lines of Research -->
+        <hr>
+
+        <!-- Partners -->
+        <section id="parceirosCont">
+          <div class="container">
+            <div class="row text-center h2 mb-4">
+              <div class="col-sm">
+                Parceiros
+              </div>
+            </div>
+            <div class="row text-justify justify-content-center">
+              <div class="col-sm-4">
+                <img class="d-block mx-auto" src="png/ANP.png"  height="100">
+              </div>
+              <div class="col-sm-4">
+                <img class="d-block mx-auto" src="png/petrobras.png"  height="100">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Partners -->
+        <hr class="mt-5">
+
+
+        <div class="container">
+          <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          </div>
+          <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          </div>
+          
+        </div>
       </div>
 
     </main><!-- /.container -->
@@ -63,9 +374,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
   </body>
 </html>

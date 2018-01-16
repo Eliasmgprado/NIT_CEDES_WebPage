@@ -12,7 +12,16 @@ body {
     left:0;
     right:0;
     background:rgba(0,0,0,0.3);
-  }
+}
+
+.carousel-cont {
+    display:block;
+    width:100%;
+    height:400px;
+    overflow:hidden;
+}
+
+
 section {
 padding-top: 60px;
 }
@@ -88,9 +97,49 @@ padding-top: 60px;
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
+    position: relative;
 }
 
 .card {
     height: 100%;
     display: flex;
+}
+
+.hm-zoom-div {
+    overflow: hidden;
+}
+
+.hm-zoom-div > .hm-zoom-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -moz-transition: all 2s;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.hm-zoom-div:hover > .hm-zoom-img {
+    -moz-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);   
+}
+
+.btn-rounded{
+    border-radius: 22.5px;
+}
+
+.btn-outline-primary {
+    border: 2px solid rgb(110, 110, 110);
+    color: rgb(88, 88, 88)!important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus {
+    border-color: rgb(49, 49, 49);
+    color: rgb(49, 49, 49)!important;
 }

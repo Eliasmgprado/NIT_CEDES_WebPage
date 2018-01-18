@@ -21,9 +21,9 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top scrolling-navbar">
         <div class="container">
-          <a class="navbar-brand mb-0 h1" href="#">
+          <a class="navbar-brand mb-0 h1 align-items-center d-flex" href="#">
               <img src="/png/logo_empresa.png" width="45" height="35" 
               class="d-inline-block align-top mr-2" alt="">
             ICT-NIT-CEDES
@@ -70,14 +70,13 @@
             <div class="carousel-cont">
               <a href="#objetivosCont">
                 <img class="d-block w-100" src="/png/FP_figure-01.png" alt="First slide">
-                <div class="carousel-caption d-none d-md-block text-left">
-                  <h1>Conheça o Centro de Desenvolvimento Tecnológico do Serviço Geológico do Brasil</h1>
-                  <p>
+                <div class="carousel-caption carousel-text-div d-flex d-md-flex 
+                text-center flex-column align-items-center justify-content-center">
+                  <h1 class="h1-responsive">Conheça o Centro de Desenvolvimento Tecnológico do Serviço Geológico do Brasil</h1>
+                  <p class="d-none d-sm-block">
                     Instituição de Ciência e Tecnologia
                     <br/>
                     Núcleo de Inovação e Tecnologia
-                    <br/>
-                    Centro de Desenvolvimento Tecnológico
                   </p>
                 </div>
               </a>
@@ -86,7 +85,7 @@
           <div class="carousel-item">
             <div class="carousel-cont">
               <a href="#!">
-                <img class="d-block w-100" src="/png/FP_figure-01.png" alt="Second slide">
+                <img class="d-block w-100" src="/imgs/geology_table_c.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>ICT - NIT - CEDES</h5>
                   <p>Instituição de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
@@ -119,10 +118,10 @@
       <!-- Main Container -->
       <div class="container">
         <!-- News -->
-        <section id="PublicacoesCont">
-          <div class="container">
+        <section id="NewsCont">
+          <div class="container cnt-backgorund-blue">
             <a href="#!">
-              <h2 class="display__title h2"> Notícias </h2>  
+              <h2 class="display__title h2 text-light"> Notícias </h2>  
             </a>
             <div class="row">
               <div class="col-md-8 d-flex">
@@ -176,7 +175,7 @@
                             <h6 class="silver-text">
                               Hidrogeologia
                               <span class="px-1">|</span>
-                              <time datetime="2018-16-01" itemprop="datePublished">12 de Janeiro de 2018</time>
+                              <time datetime="2018-12-01" itemprop="datePublished">12 de Janeiro de 2018</time>
                             </h6>
                             <h4 class="card-title pt-2"><strong>Titulo da Notícia</strong></h4>
                             <p class="text-justify">Breve introdução da notícia. Donec sed odio dui. Etiam porta 
@@ -206,7 +205,7 @@
                             <h6 class="silver-text">
                               Econômica
                               <span class="px-1">|</span>
-                              <time datetime="2018-16-01" itemprop="datePublished">10 de Janeiro de 2018</time>
+                              <time datetime="2018-10-01" itemprop="datePublished">10 de Janeiro de 2018</time>
                             </h6>
                             <h4 class="card-title pt-2"><strong>Titulo da Notícia</strong></h4>
                             <p class="text-justify">Breve introdução da notícia. Donec sed odio dui. Etiam porta 
@@ -227,18 +226,16 @@
               </div>
               
             </div>
-            <div class="d-flex w-100 justify-content-end">
-              <a class="btn btn-outline-primary btn-rounded waves-effect my-0 pr-4">
-                Mais Notícias
-                <i class="fa fa-chevron-right px-1 pt-1"></i>
-              </a>
+            <div class="d-flex w-100 justify-content-end btn-more-div">
+                <span class="font-weight-bold blue-text">Mais Notícias</span>
+                <a class="btn-floating btn-sm blue-gradient my-0"><i class="fa fa-chevron-right"></i></a>
             </div>
           </div>
         </section>
         <!-- News -->
 
         <!-- Publications -->
-        <section id="PublicacoesCont_2">
+        <section id="PublicacoesCont">
             <div class="container">
               <a href="#!">
                 <h2 class="display__title h2"> Publicações </h2>  
@@ -274,9 +271,9 @@
                   <div class="card card-cascade wider hoverable">
                     <div class="card-body">
                       <h6 class="silver-text h7">
-                        Geocronologia
+                        Modelamento
                         <span class="px-1">|</span>
-                        <time datetime="2018-16-01" itemprop="datePublished">16 de Janeiro de 2018</time>
+                        <time datetime="2018-14-01" itemprop="datePublished">14 de Janeiro de 2018</time>
                       </h6>
                       <hr class="my-2">
                       <h5 class="card-title">
@@ -300,9 +297,9 @@
                   <div class="card card-cascade wider hoverable">
                     <div class="card-body">
                       <h6 class="silver-text h7">
-                        Geocronologia
+                        Tectônica
                         <span class="px-1">|</span>
-                        <time datetime="2018-16-01" itemprop="datePublished">16 de Janeiro de 2018</time>
+                        <time datetime="2018-10-01" itemprop="datePublished">10 de Janeiro de 2018</time>
                       </h6>
                       <hr class="my-2">
                       <h5 class="card-title">
@@ -323,78 +320,130 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex w-100 justify-content-end">
-                <a class="btn btn-outline-primary btn-rounded waves-effect my-0 pr-4">
-                  Mais Publicações
-                  <i class="fa fa-chevron-right px-1 pt-1"></i>
-                </a>
+              <div class="d-flex w-100 justify-content-end btn-more-div">
+                  <span class="font-weight-bold blue-text">Mais Publicações</span>
+                  <a class="btn-floating btn-sm blue-gradient my-0"><i class="fa fa-chevron-right"></i></a>
               </div>
             </div>
           </section>
           <!-- Publications -->
 
-        <!-- Publications -->
-        <section id="PublicacoesCont_2">
+        <!-- lines of Research -->
+        <section id="researchCont">
           <div class="container">
             <a href="#!">
-              <h2 class="display__title h2"> Publicações </h2>  
+              <h2 class="display__title h2"> Linhas de Pesquisa </h2>  
             </a>
-            <div class="row">
-              <div class="col-sm-4">
-                  <div class="card card-cascade wider hoverable">
-                    <div class="view overlay hm-white-slight card-img-div">
-                      <div class="card-image">
-                        <img class="card-img-top img-center" src="imgs/Pub_1.jpg" alt="Card image cap">
-                        <a href="#!">
-                            <div class="mask"></div>
-                        </a>
+            <div class="row mb-3 d-flex">
+              <!-- Line-1 -->
+              <div class="col-md-4 mb-3">
+                  <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(imgs/Plates_tec.png);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                      <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Tectônica Continental e Análise de Bacias</strong></h3>
                       </div>
                     </div>
-                    <hr class="my-0">
-                    <div class="card-body">
-                        
-                      <h5 class="card-title">Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação</h5>
-                      
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                    <!-- Content -->
                   </div>
               </div>
-              <div class="col-sm-4">
-                <div class="card card-cascade wider hoverable">
-                  <div class="view overlay hm-white-slight card-img-div">
-                    <div class="card-image">
-                      <img class="card-img-top img-center" src="imgs/Pub_2.png" alt="Card image cap">
-                      <a href="#!">
-                          <div class="mask"></div>
-                      </a>
+              <!-- Line-1 -->
+              <!-- Line-2 -->
+              <div class="col-md-4 mb-3">
+                  <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(imgs/S_atlantic.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                      <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Geodinâmica Equatorial e Atlântico Sul</strong></h3>
+                      </div>
                     </div>
+                    <!-- Content -->
                   </div>
-                  <div class="card-body">
-                    <h4 class="card-title">Titulo Publicação</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
               </div>
-              <div class="col-sm-4">
-                <div class="card card-cascade wider hoverable">
-                  <div class="view overlay hm-white-slight card-img-div">
-                    <div class="card-image">
-                      <img class="card-img-top img-center" src="imgs/Pub_3.jpg" alt="Card image cap">
-                      <a href="#!">
-                          <div class="mask"></div>
-                      </a>
+              <!-- Line-2 -->
+              <!-- Line-3 -->
+              <div class="col-md-4 mb-3">
+                  <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(imgs/mote_roraima.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                      <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Geodiversidade e Impactos Ambientais</strong></h3>
+                      </div>
                     </div>
+                    <!-- Content -->
                   </div>
-                  <div class="card-body">
-                    <h4 class="card-title">Titulo Publicação</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
               </div>
+              <!-- Line-3 -->
+            </div>
+            <div class="row mb-3 d-flex">
+              <!-- Line-4 -->
+              <div class="col-md-4 mb-3">
+                  <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(imgs/gold.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                      <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Arquitetura da Litosfera e Processos Mineralizantes</strong></h3>
+                      </div>
+                    </div>
+                    <!-- Content -->
+                  </div>
+              </div>
+              <!-- Line-4 -->
+              <!-- Line-5 -->
+              <div class="col-md-4 mb-3">
+                  <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(imgs/plume.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                      <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Big Data e Modelos Numéricos em Processos Geológicos</strong></h3>
+                      </div>
+                    </div>
+                    <!-- Content -->
+                  </div>
+              </div>
+              <!-- Line-5 -->
+              <!-- Line-6 -->
+              <div class="col-md-4 mb-3">
+                  <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(imgs/solar_energy.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                      <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Fontes Energéticas Alternativas e Minerais do Futuro</strong></h3>
+                      </div>
+                    </div>
+                    <!-- Content -->
+                  </div>
+              </div>
+              <!-- Line-6 -->
             </div>
           </div>
         </section>
-        <!-- Publications -->
+        <!-- lines of Research -->
+
         <!-- Objetives -->
         <section id="objetivosCont">
           <div class="container">
@@ -430,80 +479,7 @@
         </section>
         <!-- Objetives -->
 
-        <hr>
-        <!-- Lines of Research -->
-        <section id="linhasPesquisaCont">
-          <div class="container">
-            <div class="row text-center h2 mb-4">
-              <div class="col-sm">
-                Linhas de Pesquisa
-              </div>
-            </div>
-            <div class="row text-justify">
-              <div class="col-lg-2">
-                <div class="container hexagon-bg text-center px-0 mb-3">
-                  <a href="#">
-                    <h5 class="text-center text-light">Tectônica Continental e Análise de Bacias</h5>
-                  </a>
-                </div>
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-              </div>
-              <div class="col-lg-2">
-                <div class="container hexagon-bg text-center px-0 mb-3">
-                  <a href="#">
-                    <h5 class="text-center text-light">Geodinâmica Equatorial e Atlântico Sul</h5>
-                  </a>
-                </div>
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-              </div>
-              <div class="col-lg-2">
-                <div class="container hexagon-bg text-center px-0 mb-3">
-                  <a href="#">
-                    <h5 class="text-center text-light">Geodiversidade e Impactos Ambientais</h5>
-                  </a>
-                </div>
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-              </div>
-              <div class="col-lg-2">
-                <div class="container hexagon-bg text-center px-0 mb-3">
-                  <a href="#">
-                    <h5 class="text-center text-light">Arquitetura da Litosfera e Processos Mineralizantes</h5>
-                  </a>
-                </div>
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-              </div>
-              <div class="col-lg-2">
-                <div class="container hexagon-bg text-center px-0 mb-3">
-                  <a href="#">
-                    <h5 class="text-center text-light">Big Data e Modelos Numéricos em Processos Geológicos</h5>
-                  </a>
-                </div>
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-              </div>
-              <div class="col-lg-2">
-                <div class="container hexagon-bg text-center px-0 mb-3">
-                  <a href="#">
-                    <h5 class="text-center text-light">Fontes Energéticas Alternativas e Minerais do Futuro</h5>
-                  </a>
-                </div>
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Lines of Research -->
+        
         <hr>
 
         <!-- Partners -->

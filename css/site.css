@@ -9,6 +9,12 @@ body {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .carousel-caption {
+        padding-top: 65px;
+    }
+}
+
 .navbar {
     background-color: transparent;
 }

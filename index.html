@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="CPRM.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>CEDES-SGB</title>
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -21,10 +21,10 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark fixed-top scrolling-navbar">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar">
         <div class="container">
           <a class="navbar-brand mb-0 h1 align-items-center d-flex" href="#">
-              <img src="/png/logo_empresa.png" width="45" height="35" 
+              <img src="/LOGOS/cedes_1.png" width="45" height="35" 
               class="d-inline-block align-top mr-2" alt="">
             ICT-NIT-CEDES
           </a>
@@ -34,22 +34,30 @@
 
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                <a class="nav-link dropdown-toggle" href="#ResearchCont" id="dropdown01" >
+                  Pesquisa
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#!">Tecônica Continetal e Análise de Basias</a>
+                  <a class="dropdown-item" href="#!">Geodinâmica Equatirial e Atlântico Sul</a>
+                  <a class="dropdown-item" href="#!">Geodiversidade e Impactos Ambientais</a>
+                  <a class="dropdown-item" href="#!">Arquitetura da Litosfera e Processos Mineralizantes</a>
+                  <a class="dropdown-item" href="#!">Big Data e Modelos Numéricos em Processos Geológicos</a>
+                  <a class="dropdown-item" href="#!">Fontes Energéticas Alternativas e Minerais do Futuro</a>
                 </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#NewsCont">Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#PublicationCont">Publicações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutCont">Sobre o CEDES <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contato</a>
               </li>
             </ul>
           </div>
@@ -59,7 +67,7 @@
     
     <main role="main">
       <!-- first image - Carousel -->
-      <div id="topbarCarousel" class="carousel slide" data-ride="carousel">
+      <div id="topbarCarousel" class="carousel slide z-depth-3" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#topbarCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#topbarCarousel" data-slide-to="1"></li>
@@ -68,16 +76,18 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="carousel-cont">
-              <a href="#objetivosCont">
+              <a href="#oboutCont">
                 <img class="d-block w-100" src="/png/FP_figure-01.png" alt="First slide">
                 <div class="carousel-caption carousel-text-div d-flex d-md-flex 
                 text-center flex-column align-items-center justify-content-center">
-                  <h1 class="h1-responsive">Conheça o Centro de Desenvolvimento Tecnológico do Serviço Geológico do Brasil</h1>
-                  <p class="d-none d-sm-block">
+                  <h1 class="h1-responsive text-shadow">Conheça o Centro de Desenvolvimento Tecnológico do Serviço Geológico do Brasil</h1>
+                  <h5 class="d-none d-sm-block text-shadow">ICT - NIT - CEDES</h5>
+                  <p class="d-none d-sm-block text-shadow">Instituição de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
+                  <!-- <p class="d-none d-sm-block">
                     Instituição de Ciência e Tecnologia
                     <br/>
                     Núcleo de Inovação e Tecnologia
-                  </p>
+                  </p> -->
                 </div>
               </a>
             </div>
@@ -87,8 +97,8 @@
               <a href="#!">
                 <img class="d-block w-100" src="/imgs/geology_table_c.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>ICT - NIT - CEDES</h5>
-                  <p>Instituição de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
+                  <h5 class="text-shadow">ICT - NIT - CEDES</h5>
+                  <p class="text-shadow">Instituição de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
                 </div>
               </a>
             </div>
@@ -96,10 +106,10 @@
           <div class="carousel-item">
             <div class="carousel-cont">
               <a href="#!">
-                <img class="d-block w-100" src="/png/FP_figure-01.png" alt="Third slide">
+                <img class="d-block w-100" src="/imgs/geo_tech.jpg" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>ICT - NIT - CEDES</h5>
-                  <p>Instituição de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
+                  <h5 class="text-shadow">ICT - NIT - CEDES</h5>
+                  <p class="text-shadow">Instituição de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
                 </div>
               </a>
             </div>
@@ -121,7 +131,7 @@
         <section id="NewsCont">
           <div class="container cnt-backgorund-blue">
             <a href="#!">
-              <h2 class="display__title h2 text-light"> Notícias </h2>  
+              <h2 class="display__title_2 h2 text-light text-shadow"> Notícias </h2>  
             </a>
             <div class="row">
               <div class="col-md-8 d-flex">
@@ -235,13 +245,13 @@
         <!-- News -->
 
         <!-- Publications -->
-        <section id="PublicacoesCont">
+        <section id="PublicationCont">
             <div class="container">
               <a href="#!">
                 <h2 class="display__title h2"> Publicações </h2>  
               </a>
               <div class="row">
-                <div class="col-sm-4 mb-3">
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
                   <div class="card card-cascade wider hoverable">
                     <div class="card-body">
                       <h6 class="silver-text h7">
@@ -252,11 +262,11 @@
                       <hr class="my-2">
                       <h5 class="card-title">
                         <a href="#!" class="a-under">
-                          <img class="float-right" src="imgs/Pub_1.jpg" alt="Card image cap" height="75px" width="75px">
+                          <img class="float-right" src="imgs/Pub_1_.jpg" alt="Card image cap" height="75px" width="75px">
                           Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação
                         </a>
                       </h5>
-                      <p class="card-text text-dark">
+                      <p class="card-text text-dark d-block d-md-none d-lg-block">
                         Some quick example text to build on the card title and make up the bulk of the card's content.
                         Some quick example text to build on the card title and make up the bulk of the card's content...
                       </p>
@@ -267,7 +277,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 mb-3">
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
                   <div class="card card-cascade wider hoverable">
                     <div class="card-body">
                       <h6 class="silver-text h7">
@@ -282,7 +292,7 @@
                           Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação
                         </a>
                       </h5>
-                      <p class="card-text text-dark">
+                      <p class="card-text text-dark d-block d-md-none d-lg-block">
                         Some quick example text to build on the card title and make up the bulk of the card's content.
                         Some quick example text to build on the card title and make up the bulk of the card's content...
                       </p>
@@ -293,7 +303,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 mb-3">
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
                   <div class="card card-cascade wider hoverable">
                     <div class="card-body">
                       <h6 class="silver-text h7">
@@ -308,7 +318,7 @@
                           Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação
                         </a>
                       </h5>
-                      <p class="card-text text-dark">
+                      <p class="card-text text-dark d-block d-md-none d-lg-block">
                         Some quick example text to build on the card title and make up the bulk of the card's content.
                         Some quick example text to build on the card title and make up the bulk of the card's content...
                       </p>
@@ -329,10 +339,10 @@
           <!-- Publications -->
 
         <!-- lines of Research -->
-        <section id="researchCont">
+        <section id="ResearchCont" class="section parallax cnt-backgorund-h-one">
           <div class="container">
             <a href="#!">
-              <h2 class="display__title h2"> Linhas de Pesquisa </h2>  
+              <h2 class="display__title h2 text-light text-shadow"> Linhas de Pesquisa </h2>  
             </a>
             <div class="row mb-3 d-flex">
               <!-- Line-1 -->
@@ -444,9 +454,32 @@
         </section>
         <!-- lines of Research -->
 
-        <!-- Objetives -->
-        <section id="objetivosCont">
+        <!-- About -->
+        <section id="aboutCont">
           <div class="container">
+            <a href="#!">
+                <h2 class="display__title h2 text-dark"> Sobre o CEDES </h2>  
+            </a>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+              Nullam id dolor id nibh ultricies vehicula ut id elit. 
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+              Nullam id dolor id nibh ultricies vehicula ut id elit. 
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+              Nullam id dolor id nibh ultricies vehicula ut id elit. 
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+              Nullam id dolor id nibh ultricies vehicula ut id elit. 
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+              Nullam id dolor id nibh ultricies vehicula ut id elit. 
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+              Nullam id dolor id nibh ultricies vehicula ut id elit. 
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            </p>
+            <hr>
             <div class="row text-center h2 mb-4">
               <div class="col-sm">
                 Objetivos
@@ -476,48 +509,217 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- Objetives -->
-
-        
-        <hr>
-
-        <!-- Partners -->
-        <section id="parceirosCont">
-          <div class="container">
-            <div class="row text-center h2 mb-4">
-              <div class="col-sm">
-                Parceiros
-              </div>
-            </div>
-            <div class="row text-justify justify-content-center">
-              <div class="col-sm-4">
-                <img class="d-block mx-auto" src="png/ANP.png"  height="100">
-              </div>
-              <div class="col-sm-4">
-                <img class="d-block mx-auto" src="png/petrobras.png"  height="100">
-              </div>
+          <hr>
+          <div class="row text-center h2 mb-4">
+            <div class="col-sm">
+              Parceiros
             </div>
           </div>
-        </section>
-        <!-- Partners -->
-        <hr class="mt-5">
-
-
-        <div class="container">
-          <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-          </div>
-          <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          <div class="row text-justify justify-content-center d-flex align-items-center">
+            <div class="col-sm-6 mb-4">
+              <img class="d-block mx-auto" src="png/ANP.png"  height="100">
+            </div>
+            <div class="col-sm-6 mb-4">
+              <img class="d-block mx-auto" src="png/petrobras.png"  height="100">
+            </div>
           </div>
           
-        </div>
+        </section>
+        <!-- About -->
+        <!-- Team -->
+        <section id="teamCont" class="section parallax cnt-backgorund-h-two">
+          <div class="container">
+            <a href="#!">
+              <h2 class="display__title_2 h2 text-light text-shadow"> Equipe </h2>  
+            </a>
+            <div class="row">
+              <!-- member -->
+              <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="avatar-up"></div>
+                <a class="text-dark" href="#!">
+                  <div class="card team-card hoverable">
+                    
+                    <div class="avatar">
+                      <img src="/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
+                    </div>
+                    <div class="card-body text-center">
+                      <h4>
+                        Martin L. King
+                      </h4>
+                      <h5 class="blue-grey-text">Diretor</h5>
+                      <p class="card-text text-justify d-block d-sm-none d-lg-block">
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- member -->
+              <!-- member -->
+              <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="avatar-up"></div>
+                <a class="text-dark" href="#!">
+                  <div class="card team-card hoverable">
+                    
+                    <div class="avatar">
+                      <img src="/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
+                    </div>
+                    <div class="card-body text-center">
+                      <h4>
+                        Martin L. King
+                      </h4>
+                      <h5 class="blue-grey-text">Diretor</h5>
+                      <p class="card-text text-justify d-block d-sm-none d-lg-block">
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- member -->
+              <!-- member -->
+              <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="avatar-up"></div>
+                <a class="text-dark" href="#!">
+                  <div class="card team-card hoverable">
+                    
+                    <div class="avatar">
+                      <img src="/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
+                    </div>
+                    <div class="card-body text-center">
+                      <h4>
+                        Martin L. King
+                      </h4>
+                      <h5 class="blue-grey-text">Diretor</h5>
+                      <p class="card-text text-justify d-block d-sm-none d-lg-block">
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- member -->
+              <!-- member -->
+              <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="avatar-up"></div>
+                <a class="text-dark" href="#!">
+                  <div class="card team-card hoverable">
+                    
+                    <div class="avatar">
+                      <img src="/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
+                    </div>
+                    <div class="card-body text-center">
+                      <h4>
+                        Martin L. King
+                      </h4>
+                      <h5 class="blue-grey-text">Diretor</h5>
+                      <p class="card-text text-justify d-block d-sm-none d-lg-block">
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- member -->
+            </div>
+          </div>    
+        </section>
+        <!-- Team -->
+        
+    </main><!-- /.container -->
+    <!--Footer-->
+    <footer id="footer" class="page-footer center-on-small-only stylish-color-dark">
+
+      <!--Footer Links-->
+      <div class="container">
+        <div class="row text-center text-md-left mt-3 pb-3">
+
+          <!--First column-->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="/LOGOS/cedes_1.png" width="60" height="46" 
+              class="d-inline-block mb-2" alt="">
+              
+            </div>
+            <h6 class="title mb-4 font-bold text-center">ICT-NIT-CEDES</h6>
+            
+            <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <!--/.First column-->
+
+          <hr class="w-100 clearfix d-md-none">
+
+          <!--Second column-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <p><a href="#!">Sobre o CEDES</a></p>
+              <p><a href="#!">Notícias</a></p>
+              <p><a href="#!">Publicações</a></p>
+              <p><a href="#!">Linhas de Pesquisa</a></p>
+          </div>
+          <!--/.Second column-->
+
+          <hr class="w-100 clearfix d-md-none">
+
+          <!--Third column-->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <p><a href="#!">Eventos</a></p>
+              <p><a href="#!">Seja um Parceiro</a></p>
+              <p><a href="#!">Projetos</a></p>
+          </div>
+          <!--/.Third column-->
+
+          <hr class="w-100 clearfix d-md-none">
+
+          <!--Fourth column-->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="title mb-4 font-bold">Contato</h6>
+              <p><i class="fa fa-home mr-3"></i> Brasília, DF 70000-000, Brasil</p>
+              <p><i class="fa fa-envelope mr-3"></i> cedes@cprm.gov.br</p>
+              <p><i class="fa fa-phone mr-3"></i> 61 3333 4444</p>
+              <p><i class="fa fa-print mr-3"></i> 61 3333 5555</p>
+          </div>
+          <!--/.Fourth column-->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <div class="row py-3 d-flex align-items-center">
+
+          <!--Grid column-->
+          <div class="col-md-8 col-lg-9">
+
+              <!--Copyright-->
+              <p class="text-center text-md-left grey-text">© 2017 Copyright: <a href="#!"><strong> Centro de Desenvolvimento Tecnológico do Serviço Geológico do Brasil</strong></a></p>
+              <!--/.Copyright-->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4 col-lg-3 ml-lg-0">
+
+              <!--Social buttons-->
+              <div class="social-section text-center text-md-left">
+                  <ul>
+                      <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="btn-floating btn-sm rgba-white-slight mr-xl-4"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+              </div>
+              <!--/.Social buttons-->
+
+          </div>
+          <!--Grid column-->
+
       </div>
 
-    </main><!-- /.container -->
+    </footer>
+    <!--/.Footer-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -526,5 +728,6 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mdb.min.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>

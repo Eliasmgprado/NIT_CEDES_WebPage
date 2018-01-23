@@ -1,6 +1,7 @@
 body {
    /* padding-top: 60px; */
-   padding-bottom: 3rem;  
+   /* padding-bottom: 3rem;   */
+   background: #f1f2f2;
 }
 
 @media only screen and (max-width: 768px) {
@@ -20,12 +21,27 @@ body {
 }
 
 .top-nav-collapse {
-    background: linear-gradient(to bottom, #141e30, #243b55);
+    /* background: linear-gradient(to top, #141e30, #243b55); */
+    background: 
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,1) 0%,
+            rgba(241,241,241,1) 92%,
+            rgba(225,225,225,1) 98%,
+            rgba(246,246,246,1) 100%); 
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+  */
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background: linear-gradient(to bottom, #141e30, #243b55);
+        background: 
+            linear-gradient(
+                to bottom,
+                rgba(255,255,255,1) 0%,
+                rgba(241,241,241,1) 92%,
+                rgba(225,225,225,1) 98%,
+                rgba(246,246,246,1) 100%); 
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+  */
     }
 }
 
@@ -37,7 +53,7 @@ body {
     bottom:0;
     left:0;
     right:0;
-    background:rgba(0,0,0,0.4);
+    background:rgba(0,0,0,0.3);
 }
 
 .carousel-cont {
@@ -55,7 +71,7 @@ body {
 
 
 section {
-    padding-top: 55px;
+    padding-top: 65px;
 }
 
 .hexagon-bg {
@@ -106,6 +122,21 @@ section {
     width:100px;
     margin:14px 0 0 0;
     background:#0093b5;
+}
+
+.display__title_2 {
+    display:inline-block;
+    margin:0 0 18px 0;
+    color: #2b2b2b
+}
+
+.display__title_2:after {
+    content:"";
+    display:block;
+    height:2px;
+    width:100px;
+    margin:14px 0 0 0;
+    background:#3b3c3f;
 }
 
 
@@ -260,6 +291,7 @@ section {
     height: 500px;
     z-index: -1000;
     background: linear-gradient(160deg,#134E5E,#71B280);
+    background-image: url(/png/hexellence.png), linear-gradient(160deg,#134E5E,#71B280);
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     position: absolute;
@@ -278,6 +310,7 @@ section {
         height: 600px;
         z-index: -1000;
         background: linear-gradient(160deg,#134E5E,#71B280);
+        background-image: url(/png/hexellence.png), linear-gradient(160deg,#134E5E,#71B280);
         -webkit-transform-origin: left bottom;
         transform-origin: left bottom;
         position: absolute;
@@ -296,6 +329,7 @@ section {
         height: 600px;
         z-index: -1000;
         background: linear-gradient(160deg,#134E5E,#71B280);
+        background-image: url(/png/hexellence.png), linear-gradient(160deg,#134E5E,#71B280);
         -webkit-transform-origin: left bottom;
         transform-origin: left bottom;
         position: absolute;
@@ -314,6 +348,7 @@ section {
         height: 600px;
         z-index: -1000;
         background: linear-gradient(160deg,#134E5E,#71B280);
+        background-image: url(/png/hexellence.png), linear-gradient(160deg,#134E5E,#71B280);
         -webkit-transform-origin: left bottom;
         transform-origin: left bottom;
         position: absolute;
@@ -330,3 +365,119 @@ section {
         font-size: 115%
     }
 }
+
+.cnt-backgorund-h-one:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1001;
+    background: linear-gradient(160deg,#C04848,#480048);
+    background-image: url(/png/bright-squares.png), linear-gradient(160deg,#5C258D,#4389A2);
+    /* top: 100px; */
+    /* left: 0; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    /* background-size: cover; */
+}
+
+.section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    min-height: 200px;
+}
+
+.parallax:after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Move the pseudo-element back away from the camera,
+        * then scale it back up to fill the viewport.
+        * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    /* Force the background image to fill the whole element. */
+    /* background-size: 100%; */
+    /* Keep the image from overlapping sibling elements. */ 
+    z-index: -1;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-top:30px;
+
+    -moz-box-shadow: 
+        inset 0px 20px 30px -10px rgba(0, 0, 0,0.6), 
+        inset 0px -20px 30px -10px rgba(0, 0, 0,0.6);
+
+    -webkit-box-shadow: 
+        inset 0px 20px 30px -10px rgba(0, 0, 0,0.6), 
+        inset 0px -20px 30px -10px rgba(0, 0, 0,0.6);
+
+    box-shadow: 
+        inset 0px 20px 30px -10px rgba(0, 0, 0,0.6), 
+        inset 0px -20px 30px -10px rgba(0, 0, 0,0.6);
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin: -65px auto 0;
+    overflow: hidden;
+    border: 5px solid rgb(62,62,62);
+  }
+
+.avatar img {
+    width: 100%;
+}
+
+.avatar-up {
+    overflow: hidden;
+    height: 75px;
+}
+
+.team-card {
+    height: auto;
+}
+
+.cnt-backgorund-h-two:after {
+    content: "";
+    height: 100%;
+    z-index: -1001;
+    background: #f1f2f2;
+    background-image: url(/png/bright-squares.png), linear-gradient(160deg, #556270, #4ECDC4);
+    /* top: 100px; */
+    /* left: 0; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    /* background-size: cover; */
+    /* box-shadow: inset 0px 20px 30px -10px rgba(0, 0, 0,0.5), inset 0px -20px 30px -10px rgba(0, 0, 0,0.3); */
+}
+
+footer.page-footer {
+ margin-top: 30px;
+}
+
+.navbar .dropdown-menu a:hover {
+    color: #134E5E!important;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+    background-color: rgba(255,255,255,1);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 5px 0.1px inset;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #2b2b2b;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
+    color: black;
+}
+

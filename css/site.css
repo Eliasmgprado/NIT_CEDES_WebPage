@@ -2,6 +2,7 @@ body {
    /* padding-top: 60px; */
    /* padding-bottom: 3rem;   */
    background: #f1f2f2;
+   overflow-x:hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -218,7 +219,7 @@ section {
 .a-under:hover {
     text-decoration: underline;
     -webkit-text-decoration-skip: skip;
-    text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
 }
 
 .blue-gradient {

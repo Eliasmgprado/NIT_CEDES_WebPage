@@ -1,0 +1,532 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main role="main">
+    <!-- HEADER IMAGE -->
+    <div class="jumbotron jumbotron-fluid jumbotron-header mb-0" 
+            style="background-image: url(/static/imgs/FP_figure-01.jpg)">
+        <a href="#aboutCont">
+        <div class="container">
+            <div class="jumbotron-cnt-txt d-flex d-md-flex 
+            text-center flex-column align-items-center justify-content-center">
+            <h1 class="h1-responsive text-shadow">Conheça o Centro de Desenvolvimento Tecnológico do Serviço Geológico do Brasil</h1>
+            <h5 class="d-none d-sm-block text-shadow">ICT - NIT - CEDES</h5>
+            <p class="d-none d-sm-block text-shadow">Instituto de Ciência e Tecnologia - Núcleo de Inovação e Tecnologia - Centro de Desenvolvimento Tecnológico</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <!-- HEADER IMAGE -->
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- News -->
+        <section id="NewsCont">
+        <div class="container">
+            <a href="#!">
+            <h2 class="display__title h2"> Notícias </h2>  
+            </a>
+            <div class="row">
+            <div class="col-md-8 d-flex">
+                <!-- News-1 -->
+                <div class="row mb-3 mr-0">
+                <article>
+                    <div class="card card-image hoverable of-h view hm-zoom-div">
+                    <div class="hm-zoom-img" style="background-image: url(/static/imgs/news_1.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-left rgba-black-strong py-5 px-4 card-block">
+                        <div>
+                        <h6 class="silver-text">
+                            Geocronologia
+                            <span class="px-1">|</span>
+                            <time datetime="2018-16-01" itemprop="datePublished">16 de Janeiro de 2018</time>
+                        </h6>
+                        <h3 class="card-title pt-2"><strong>Titulo da Notícia</strong></h3>
+                        <p class="text-justify">Breve introdução da notícia. Donec sed odio dui. Etiam porta 
+                            sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                        </p>
+                        </div>
+                        <div>
+                        <a href="#!" class="d-flex flex-row-reverse text-info">
+                            <h5 class="waves-effect d-flex flex-row-reverse">
+                            <i class="fa fa-chevron-right px-1"></i>
+                            Ler
+                            </h5>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    </div>
+                </article>
+                </div>
+                <!-- News-1 -->
+            </div>
+            <div class="col-md-4">
+                <!-- News-2 -->
+                <div class="row mb-3 mr-0">
+                <article>
+                    <div class="card hoverable w-100 view">
+                        <a href="#!">
+                            <div class="mask waves-effect waves-dark"></div>
+                        </a>
+                        <!-- Content -->
+                        <div class="card-body">
+                            <h6 class="silver-text">
+                            Hidrogeologia
+                            <span class="px-1">|</span>
+                            <time datetime="2018-12-01" itemprop="datePublished">12 de Janeiro de 2018</time>
+                            </h6>
+                            <h4 class="card-title pt-2"><strong>Titulo da Notícia</strong></h4>
+                            <p class="text-justify">Breve introdução da notícia. Donec sed odio dui. Etiam porta 
+                            sem malesuada magna mollis euismod. 
+                            </p>
+                            <a href="#!" class="d-flex flex-row-reverse text-info">
+                            <h5 class="waves-effect d-flex flex-row-reverse">
+                                <i class="fa fa-chevron-right px-1 pt-1"></i>
+                                Ler
+                            </h5>
+                            </a>
+                        </div>
+                        <!-- Content -->
+                    </div>
+                </article>
+                </div>
+                <!-- News-2 -->
+                <!-- News-3 -->
+                <div class="row mb-3 mr-0">
+                <article>
+                    <div class="card hoverable w-100 view">
+                        <a href="#!">
+                            <div class="mask waves-effect waves-dark"></div>
+                        </a>
+                        <!-- Content -->
+                        <div class="card-body">
+                            <h6 class="silver-text">
+                            Econômica
+                            <span class="px-1">|</span>
+                            <time datetime="2018-10-01" itemprop="datePublished">10 de Janeiro de 2018</time>
+                            </h6>
+                            <h4 class="card-title pt-2"><strong>Titulo da Notícia</strong></h4>
+                            <p class="text-justify">Breve introdução da notícia. Donec sed odio dui. Etiam porta 
+                            sem malesuada magna mollis euismod. 
+                            </p>
+                            <a href="#!" class="d-flex flex-row-reverse text-info">
+                            <h5 class="waves-effect d-flex flex-row-reverse">
+                                <i class="fa fa-chevron-right px-1 pt-1"></i>
+                                Ler
+                            </h5>
+                            </a>
+                        </div>
+                        <!-- Content -->
+                    </div>
+                </article>
+                </div>
+                <!-- News-3 -->
+            </div>
+            
+            </div>
+            <div class="d-flex w-100 justify-content-end btn-more-div">
+                <span class="font-weight-bold blue-text">Mais Notícias</span>
+                <a class="btn-floating btn-sm blue-gradient my-0"><i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
+        </section>
+        <!-- News -->
+
+        <!-- Publications -->
+        <section id="PublicationCont">
+            <div class="container">
+            <a href="#!">
+                <h2 class="display__title h2"> Publicações </h2>  
+            </a>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card card-cascade wider hoverable">
+                    <div class="card-body">
+                    <h6 class="silver-text h7">
+                        Geocronologia
+                        <span class="px-1">|</span>
+                        <time datetime="2018-16-01" itemprop="datePublished">16 de Janeiro de 2018</time>
+                    </h6>
+                    <hr class="my-2">
+                    <h5 class="card-title">
+                        <a href="#!" class="a-under">
+                        <img class="float-right" src="/static/imgs/Pub_1_.jpg" alt="Card image cap" height="75px" width="75px">
+                        Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação
+                        </a>
+                    </h5>
+                    <p class="card-text text-dark d-block d-md-none d-lg-block">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Some quick example text to build on the card title and make up the bulk of the card's content...
+                    </p>
+                    <p class="h7 text-secondary">
+                        Author A., Author B., Author C., ...
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card card-cascade wider hoverable">
+                    <div class="card-body">
+                    <h6 class="silver-text h7">
+                        Modelamento
+                        <span class="px-1">|</span>
+                        <time datetime="2018-14-01" itemprop="datePublished">14 de Janeiro de 2018</time>
+                    </h6>
+                    <hr class="my-2">
+                    <h5 class="card-title">
+                        <a href="#!" class="a-under">
+                        <img class="float-right" src="/static/imgs/Pub_2.png" alt="Card image cap" height="75px" width="75px">
+                        Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação
+                        </a>
+                    </h5>
+                    <p class="card-text text-dark d-block d-md-none d-lg-block">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Some quick example text to build on the card title and make up the bulk of the card's content...
+                    </p>
+                    <p class="h7 text-secondary">
+                        Author A., Author B., Author C., ...
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card card-cascade wider hoverable">
+                    <div class="card-body">
+                    <h6 class="silver-text h7">
+                        Tectônica
+                        <span class="px-1">|</span>
+                        <time datetime="2018-10-01" itemprop="datePublished">10 de Janeiro de 2018</time>
+                    </h6>
+                    <hr class="my-2">
+                    <h5 class="card-title">
+                        <a href="#!" class="a-under">
+                        <img class="float-right" src="/static/imgs/Pub_3.jpg" alt="Card image cap" height="75px" width="75px">
+                        Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação
+                        </a>
+                    </h5>
+                    <p class="card-text text-dark d-block d-md-none d-lg-block">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Some quick example text to build on the card title and make up the bulk of the card's content...
+                    </p>
+                    <p class="h7 text-secondary">
+                        Author A., Author B., Author C., ...
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="d-flex w-100 justify-content-end btn-more-div">
+                <span class="font-weight-bold blue-text">Mais Publicações</span>
+                <a class="btn-floating btn-sm blue-gradient my-0"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            </div>
+        </section>
+        <!-- Publications -->
+
+        <!-- lines of Research -->
+        <section id="ResearchCont" class="section parallax cnt-backgorund-h-one">
+        <div class="container">
+            <a href="#!">
+            <h2 class="display__title h2 text-light text-shadow"> Linhas de Pesquisa </h2>  
+            </a>
+            <div class="row mb-3 d-flex">
+            <!-- Line-1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(/static/imgs/Plates_tec.png);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                    <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Tectônica Continental e Análise de Bacias</strong></h3>
+                    </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            <!-- Line-1 -->
+            <!-- Line-2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(/static/imgs/S_atlantic.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                    <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Geodinâmica Equatorial e Atlântico Sul</strong></h3>
+                    </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            <!-- Line-2 -->
+            <!-- Line-3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(/static/imgs/mote_roraima.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                    <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Geodiversidade e Impactos Ambientais</strong></h3>
+                    </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            <!-- Line-3 -->
+            </div>
+            <div class="row mb-3 d-flex">
+            <!-- Line-4 -->
+            <div class="col-md-4 mb-3">
+                <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(/static/imgs/gold.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                    <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Arquitetura da Litosfera e Processos Mineralizantes</strong></h3>
+                    </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            <!-- Line-4 -->
+            <!-- Line-5 -->
+            <div class="col-md-4 mb-3">
+                <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(/static/imgs/plume.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                    <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Big Data e Modelos Numéricos em Processos Geológicos</strong></h3>
+                    </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            <!-- Line-5 -->
+            <!-- Line-6 -->
+            <div class="col-md-4 mb-3">
+                <div class="card card-image hoverable of-h view hm-zoom-div align-items-center">
+                    <div class="hm-zoom-img" style="background-image: url(/static/imgs/solar_energy.jpg);"></div>
+                    <a href="#!">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                    <!-- Content -->
+                    <div class="text-white text-center rgba-black-light py-5 px-4 card-block w-100 align-items-center flex-row">
+                    <div>
+                        <h3 class="card-title pt-2 text-shadow"><strong>Fontes Energéticas Alternativas e Minerais do Futuro</strong></h3>
+                    </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div>
+            <!-- Line-6 -->
+            </div>
+        </div>
+        </section>
+        <!-- lines of Research -->
+
+        <!-- About -->
+        <section id="aboutCont">
+        <div class="container">
+            <a href="#!">
+                <h2 class="display__title h2 text-dark"> Sobre o CEDES </h2>  
+            </a>
+            <!-- Intro -->
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+            Nullam id dolor id nibh ultricies vehicula ut id elit. 
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+            Nullam id dolor id nibh ultricies vehicula ut id elit. 
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+            Nullam id dolor id nibh ultricies vehicula ut id elit. 
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+            Nullam id dolor id nibh ultricies vehicula ut id elit. 
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+            Nullam id dolor id nibh ultricies vehicula ut id elit. 
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+            Nullam id dolor id nibh ultricies vehicula ut id elit. 
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            </p>
+            <!-- Intro -->
+            <hr>
+            <!-- Objetivos -->
+            <div class="row text-center h2 mb-4">
+            <div class="col-sm">
+                Objetivos
+            </div>
+            </div>
+            <div class="row text-justify">
+            <div class="col-sm-4">
+                <img class="d-block mx-auto" src="/static/svg/earth.svg" width="140" height="140">
+                <h3 class="text-center">Objetivo 1</h3>
+                <p>
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img class="d-block mx-auto" src="/static/svg/light-bulb.svg" width="140" height="140">
+                <h3 class="text-center">Objetivo 2</h3>
+                <p>
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img class="d-block mx-auto" src="/static/svg/hand-shake.svg" width="140" height="140">
+                <h3 class="text-center">Objetivo 3</h3>
+                <p>
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                </p>
+            </div>
+            </div>
+        </div>
+        <!-- Objetivos -->
+        <hr>
+        <!-- Parceiros -->
+        <div class="row text-center h2 mb-4">
+            <div class="col-sm">
+            Parceiros
+            </div>
+        </div>
+        <div class="row text-justify justify-content-center d-flex align-items-center">
+            <div class="col-sm-6 mb-4">
+            <img class="d-block mx-auto" src="/static/png/ANP.png"  height="100">
+            </div>
+            <div class="col-sm-6 mb-4">
+            <img class="d-block mx-auto" src="/static/png/petrobras.png"  height="100">
+            </div>
+        </div>
+        <!-- Parceiros -->
+        </section>
+        <!-- About -->
+        <!-- Team -->
+        <section id="teamCont" class="section parallax cnt-backgorund-h-two">
+        <div class="container">
+            <a href="#!">
+            <h2 class="display__title_2 h2 text-light text-shadow"> Equipe </h2>  
+            </a>
+            <div class="row">
+            <!-- member -->
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="avatar-up"></div>
+                <a class="text-dark" href="#!">
+                <div class="card team-card hoverable">
+                    
+                    <div class="avatar">
+                    <img src="/static/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
+                    </div>
+                    <div class="card-body text-center">
+                    <h4>
+                        Martin L. King
+                    </h4>
+                    <h5 class="blue-grey-text">Diretor</h5>
+                    <p class="card-text text-justify d-block d-sm-none d-lg-block">
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
+                    </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <!-- member -->
+            <!-- member -->
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="avatar-up"></div>
+                <a class="text-dark" href="#!">
+                <div class="card team-card hoverable">
+                    
+                    <div class="avatar">
+                    <img src="/static/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
+                    </div>
+                    <div class="card-body text-center">
+                    <h4>
+                        Martin L. King
+                    </h4>
+                    <h5 class="blue-grey-text">Diretor</h5>
+                    <p class="card-text text-justify d-block d-sm-none d-lg-block">
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
+                    </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <!-- member -->
+            <!-- member -->
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="avatar-up"></div>
+                <a class="text-dark" href="#!">
+                <div class="card team-card hoverable">
+                    
+                    <div class="avatar">
+                    <img src="/static/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
+                    </div>
+                    <div class="card-body text-center">
+                    <h4>
+                        Martin L. King
+                    </h4>
+                    <h5 class="blue-grey-text">Diretor</h5>
+                    <p class="card-text text-justify d-block d-sm-none d-lg-block">
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
+                    </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <!-- member -->
+            <!-- member -->
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="avatar-up"></div>
+                <a class="text-dark" href="#!">
+                <div class="card team-card hoverable">
+                    
+                    <div class="avatar">
+                    <img src="/static/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
+                    </div>
+                    <div class="card-body text-center">
+                    <h4>
+                        Martin L. King
+                    </h4>
+                    <h5 class="blue-grey-text">Diretor</h5>
+                    <p class="card-text text-justify d-block d-sm-none d-lg-block">
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
+                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
+                    </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <!-- member -->
+            </div>
+        </div>    
+        </section>
+        <!-- Team -->
+    </div>
+</main><!-- /.container -->
+{% endblock %}

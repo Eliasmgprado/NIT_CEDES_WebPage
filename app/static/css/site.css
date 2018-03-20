@@ -1,0 +1,531 @@
+body {
+   /* padding-top: 60px; */
+   /* padding-bottom: 3rem;   */
+   background: #f1f2f2;
+   overflow-x:hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 55px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel-caption {
+        padding-top: 75px;
+    }
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    /* background: linear-gradient(to top, #141e30, #243b55); */
+    background: 
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,1) 0%,
+            rgba(241,241,241,1) 92%,
+            rgba(225,225,225,1) 98%,
+            rgba(246,246,246,1) 100%); 
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+  */
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background: 
+            linear-gradient(
+                to bottom,
+                rgba(255,255,255,1) 0%,
+                rgba(241,241,241,1) 92%,
+                rgba(225,225,225,1) 98%,
+                rgba(246,246,246,1) 100%); 
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+  */
+    }
+}
+
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.3);
+}
+
+.carousel-cont {
+    display:block;
+    width:100%;
+    max-height:400px;
+    overflow:hidden;
+}
+
+.carousel-text-div {
+    height: 100%;
+    justify-content: center;
+    bottom: 0px;
+}
+
+
+section {
+    padding-top: 65px;
+}
+
+.hexagon-bg {
+    background: url("/static/svg/hexagon.svg");
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 170px;
+    line-height: 170px;
+    width: 154px
+}
+
+.hexagon-bg h5 {
+    vertical-align: middle;
+    display: inline-block;
+    text-shadow: 2px 2px rgba(43, 57, 117, 0.603);
+}
+
+.card-img-div {
+    /* height: 280px;
+    line-height: 280px; */
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+/* .card-img-div:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	
+} */
+
+.card-img-div img {
+    display: inline-block;
+}
+
+.display__title {
+    display:inline-block;
+    margin:0 0 18px 0;
+    color: #2b2b2b
+}
+
+.display__title:after {
+    content:"";
+    display:block;
+    height:2px;
+    width:100px;
+    margin:14px 0 0 0;
+    background:#0093b5;
+}
+
+.display__title_2 {
+    display:inline-block;
+    margin:0 0 18px 0;
+    color: #2b2b2b
+}
+
+.display__title_2:after {
+    content:"";
+    display:block;
+    height:2px;
+    width:100px;
+    margin:14px 0 0 0;
+    background:#3b3c3f;
+}
+
+
+.pub_card-text {
+    white-space: nowrap;
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.img-center {
+    position: absolute!important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.of-h {
+    overflow: hidden;
+}
+
+.card-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+}
+
+.hm-zoom-div {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hm-zoom-div > .hm-zoom-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -moz-transition: all 2s;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+}
+
+.hm-zoom-div:hover > .hm-zoom-img {
+    -moz-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);  
+    overflow: hidden; 
+}
+
+.btn-rounded{
+    border-radius: 22.5px;
+}
+
+.btn-outline-primary {
+    border: 2px solid rgb(110, 110, 110);
+    color: rgb(88, 88, 88)!important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus {
+    border-color: rgb(49, 49, 49);
+    color: rgb(49, 49, 49)!important;
+}
+
+.h7 {
+    font-size: 0.8rem;
+}
+
+.a-under:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-skip: skip;
+    text-decoration-skip-ink: auto;
+}
+
+.blue-gradient {
+    background: -webkit-linear-gradient(50deg, #45cafc, #303f9f);
+    background: linear-gradient(40deg, #45cafc, #303f9f);
+}
+
+.btn-floating {
+    position: relative;
+    z-index: 1;
+    /* vertical-align: middle;
+    display: inline-block; */
+    overflow: hidden;
+    width: 47px;
+    height: 47px;
+    padding: 0;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #a6c;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-floating:before {
+    border-radius: 0
+}
+
+.btn-floating:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+.btn-floating:hover > i {
+    -moz-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);  
+}
+
+.btn-floating.btn-sm {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-floating i {
+    display: inline-block;
+    width: inherit;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 47px;
+    text-align: center
+}
+
+.btn-more-div {
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.cnt-backgorund-blue:before {
+    content: "";
+    width: 100%;
+    height: 500px;
+    z-index: -1000;
+    background: linear-gradient(180deg, rgba(57, 87, 120, 0.4) 80%, rgba(241, 242, 242,1)), url(/static/png/hexellence.png);
+    /* background-image: url(/static/png/hexellence.png), linear-gradient(160deg,#134E5E,#71B280); */
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    -webkit-transform: skew(0deg,-15deg);
+    transform: skew(0deg,-15deg);
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .cnt-backgorund-blue:before {
+        content: "";
+        width: 100%;
+        height: 600px;
+        z-index: -1000;
+        background: linear-gradient(180deg, rgba(57, 87, 120, 0.4) 80%, rgba(241, 242, 242,1)), url(/static/png/hexellence.png);
+        /* background-image: url(/static/png/hexellence.png), linear-gradient(160deg,#134E5E,#71B280); */
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        -webkit-transform: skew(0deg,-15deg);
+        transform: skew(0deg,-15deg);
+    
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cnt-backgorund-blue:before {
+        content: "";
+        width: 100%;
+        height: 600px;
+        z-index: -1000;
+        background: linear-gradient(180deg, rgba(57, 87, 120, 0.4) 80%, rgba(241, 242, 242,1)), url(/static/png/hexellence.png);
+        /* background-image: url(/static/png/hexellence.png), linear-gradient(160deg,#134E5E,#71B280); */
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        position: absolute;
+        top: 290px;
+        left: 0;
+        -webkit-transform: skew(0deg,-15deg);
+        transform: skew(0deg,-15deg);
+    
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cnt-backgorund-blue:before {
+        content: "";
+        width: 100%;
+        height: 600px;
+        z-index: -1000;
+        background: linear-gradient(180deg, rgba(30, 85, 109, 0.4) 80%, rgba(241, 242, 242,1)), url(/static/png/hexellence.png);
+        /* background-image: url(/static/png/hexellence.png), linear-gradient(160deg,#134E5E,#71B280); */
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        position: absolute;
+        top: 400px;
+        left: 0;
+        -webkit-transform: skew(0deg,-15deg);
+        transform: skew(0deg,-15deg);
+    
+    }
+}
+
+@media (max-width: 576px) {
+    .h1-responsive {
+        font-size: 115%
+    }
+}
+
+.cnt-backgorund-h-one:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1001;
+    background: linear-gradient(160deg,#C04848,#480048);
+    background-image: url(/static/png/hexellence.png), linear-gradient(160deg,#546a80,#aee0f1);
+    /* top: 100px; */
+    /* left: 0; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    /* background-size: cover; */
+}
+
+.section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    min-height: 200px;
+}
+
+.parallax:after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Move the pseudo-element back away from the camera,
+        * then scale it back up to fill the viewport.
+        * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    /* Force the background image to fill the whole element. */
+    /* background-size: 100%; */
+    /* Keep the image from overlapping sibling elements. */ 
+    z-index: -1;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-top:30px;
+
+    -moz-box-shadow: 
+        inset 0px 20px 30px -10px rgba(0, 0, 0,0.6), 
+        inset 0px -20px 30px -10px rgba(0, 0, 0,0.6);
+
+    -webkit-box-shadow: 
+        inset 0px 20px 30px -10px rgba(0, 0, 0,0.6), 
+        inset 0px -20px 30px -10px rgba(0, 0, 0,0.6);
+
+    box-shadow: 
+        inset 0px 20px 30px -10px rgba(0, 0, 0,0.6), 
+        inset 0px -20px 30px -10px rgba(0, 0, 0,0.6);
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin: -65px auto 0;
+    overflow: hidden;
+    border: 5px solid rgb(62,62,62);
+  }
+
+.avatar img {
+    width: 100%;
+}
+
+.avatar-up {
+    overflow: hidden;
+    height: 75px;
+}
+
+.team-card {
+    height: auto;
+}
+
+.cnt-backgorund-h-two:after {
+    content: "";
+    height: 100%;
+    z-index: -1001;
+    background: #f1f2f2;
+    background-image: url(/static/png/bright-squares.png), linear-gradient(160deg, #556270, #4ECDC4);
+    /* top: 100px; */
+    /* left: 0; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    /* background-size: cover; */
+    /* box-shadow: inset 0px 20px 30px -10px rgba(0, 0, 0,0.5), inset 0px -20px 30px -10px rgba(0, 0, 0,0.3); */
+}
+
+footer.page-footer {
+ margin-top: 30px;
+}
+
+.navbar .dropdown-menu a:hover {
+    color: #134E5E!important;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+    background-color: rgba(255,255,255,1);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 5px 0.1px inset;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #2b2b2b;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
+    color: black;
+}
+
+.jumbotron-header {
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.jumbotron-cnt-txt {
+    color: #fff;
+    text-align: center;
+    padding-top: 95px;
+    z-index: 10;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .jumbotron-cnt-txt {
+        padding-top: 10px;
+    }
+    .jumbotron-header {
+        max-height: 400px;
+        height: unset;
+    }
+}
+
+.jumbotron-header:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.3);
+}
+
+.navbar-txt {
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1600px) {
+    .container-nav {
+        max-width: 1550px;
+    }
+}

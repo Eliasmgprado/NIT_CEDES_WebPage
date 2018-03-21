@@ -40,7 +40,7 @@ class Publications(db.Model):
         return Publications.query.order_by(Publications.date.desc()).limit(3)
 
     def get_cat(self):
-        return Publications_categories.query.filter_by(id=self.category).first().category
+        return Publication_categories.query.filter_by(id=self.category).first().category
 
     def __repr__(self):
         return '<Publication {}>'.format(self.title)    

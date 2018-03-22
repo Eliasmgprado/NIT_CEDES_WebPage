@@ -46,7 +46,7 @@ body {
     }
 }
 
-.carousel-item:after {
+/* .carousel-item:after {
     content:"";
     display:block;
     position:absolute;
@@ -54,9 +54,11 @@ body {
     bottom:0;
     left:0;
     right:0;
-    background:rgba(0,0,0,0.3);
-}
+} */
 
+.bottom-25 {
+    bottom: -25px;
+}
 .carousel-cont {
     display:block;
     width:100%;
@@ -528,4 +530,9 @@ footer.page-footer {
     .container-nav {
         max-width: 1550px;
     }
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }

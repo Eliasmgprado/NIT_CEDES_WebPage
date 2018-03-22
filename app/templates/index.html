@@ -221,109 +221,13 @@
         <!-- Parceiros -->
         </section>
         <!-- About -->
-        <!-- Team -->
-        <section id="teamCont" class="section parallax cnt-backgorund-h-two">
-        <div class="container">
-            <a href="#!">
-            <h2 class="display__title_2 h2 text-light text-shadow"> Equipe </h2>  
-            </a>
-            <div class="row">
-            <!-- member -->
-            <div class="col-12 col-sm-6 col-md-3 mb-3">
-                <div class="avatar-up"></div>
-                <a class="text-dark" href="#!">
-                <div class="card team-card hoverable">
-                    
-                    <div class="avatar">
-                    <img src="/static/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
-                    </div>
-                    <div class="card-body text-center">
-                    <h4>
-                        Martin L. King
-                    </h4>
-                    <h5 class="blue-grey-text">Diretor</h5>
-                    <p class="card-text text-justify d-block d-sm-none d-lg-block">
-                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
-                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
-                    </p>
-                    </div>
-                </div>
-                </a>
-            </div>
-            <!-- member -->
-            <!-- member -->
-            <div class="col-12 col-sm-6 col-md-3 mb-3">
-                <div class="avatar-up"></div>
-                <a class="text-dark" href="#!">
-                <div class="card team-card hoverable">
-                    
-                    <div class="avatar">
-                    <img src="/static/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
-                    </div>
-                    <div class="card-body text-center">
-                    <h4>
-                        Martin L. King
-                    </h4>
-                    <h5 class="blue-grey-text">Diretor</h5>
-                    <p class="card-text text-justify d-block d-sm-none d-lg-block">
-                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
-                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
-                    </p>
-                    </div>
-                </div>
-                </a>
-            </div>
-            <!-- member -->
-            <!-- member -->
-            <div class="col-12 col-sm-6 col-md-3 mb-3">
-                <div class="avatar-up"></div>
-                <a class="text-dark" href="#!">
-                <div class="card team-card hoverable">
-                    
-                    <div class="avatar">
-                    <img src="/static/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
-                    </div>
-                    <div class="card-body text-center">
-                    <h4>
-                        Martin L. King
-                    </h4>
-                    <h5 class="blue-grey-text">Diretor</h5>
-                    <p class="card-text text-justify d-block d-sm-none d-lg-block">
-                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
-                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
-                    </p>
-                    </div>
-                </div>
-                </a>
-            </div>
-            <!-- member -->
-            <!-- member -->
-            <div class="col-12 col-sm-6 col-md-3 mb-3">
-                <div class="avatar-up"></div>
-                <a class="text-dark" href="#!">
-                <div class="card team-card hoverable">
-                    
-                    <div class="avatar">
-                    <img src="/static/imgs/face.jpg" class="img-fluid z-depth-3 rounded-circle">
-                    </div>
-                    <div class="card-body text-center">
-                    <h4>
-                        Martin L. King
-                    </h4>
-                    <h5 class="blue-grey-text">Diretor</h5>
-                    <p class="card-text text-justify d-block d-sm-none d-lg-block">
-                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
-                        Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
-                    </p>
-                    </div>
-                </div>
-                </a>
-            </div>
-            <!-- member -->
-            </div>
-        </div>    
-        </section>
-        <!-- Team -->
+        
+
+        {% if team %}
+            {% include "partials/index_team.html" %}
+        {% endif %}
+
+
     </div>
 </main><!-- /.container -->
 {% endblock %}

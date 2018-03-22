@@ -25,7 +25,7 @@
                                         </h6>
                                         <h3 class="card-title pt-2"><strong>{{ news[0].title }}</strong></h3>
                                         <p class="text-justify">
-                                            {{ news[0].intro }}
+                                            {{ news[0].intro | truncate(512)  }}
                                         </p>
                                     </div>
                                     <div>
@@ -62,7 +62,7 @@
                                 </h6>
                                 <h4 class="card-title pt-2"><strong>{{ news[1].title }}</strong></h4>
                                 <p class="text-justify">
-                                    {{ news[1].intro }}
+                                    {{ news[1].intro | truncate(150) }}
                                 </p>
                                 <a href="#!" class="d-flex flex-row-reverse text-info">
                                     <h5 class="waves-effect d-flex flex-row-reverse">
@@ -94,7 +94,7 @@
                                 </h6>
                                 <h4 class="card-title pt-2"><strong>{{ news[2].title }}</strong></h4>
                                 <p class="text-justify">
-                                    {{ news[2].intro }}
+                                    {{ news[2].intro | truncate(150) }}
                                 </p>
                                 <a href="#!" class="d-flex flex-row-reverse text-info">
                                     <h5 class="waves-effect d-flex flex-row-reverse">

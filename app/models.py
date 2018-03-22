@@ -9,9 +9,7 @@ class News(db.Model):
     intro = db.Column(db.String(512))
     body = db.Column(db.Text())
 
-    def index_news():
-        return News.query.order_by(News.date.desc()).limit(3)
-
+    
     def get_cat(self):
         return News_categories.query.filter_by(id=self.category).first().category
     def __repr__(self):
@@ -35,9 +33,6 @@ class Publications(db.Model):
     abstract = db.Column(db.Text())
     file_dir = db.Column(db.String(256))
     authors = db.relationship('Publication_authors', backref='publication', lazy='dynamic')
-
-    def index_pubs():
-        return Publications.query.order_by(Publications.date.desc()).limit(3)
 
     def get_cat(self):
         return Publication_categories.query.filter_by(id=self.category).first().category

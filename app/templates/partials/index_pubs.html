@@ -23,10 +23,13 @@
                     </a>
                 </h5>
                 <p class="card-text text-dark d-block d-md-none d-lg-block">
-                    {{ publications[0].abstract }}
+                    {{ publications[0].abstract | truncate(190) }}
                 </p>
                 <p class="h7 text-secondary">
-                    {{ publications[0].authors }}
+                        {{ publications[0].authors.all() }}
+                    {% for author in publications[0].authors %}
+                        {{ publications[0].authors }}
+                    {% endfor %}
                 </p>
                 
                 </div>

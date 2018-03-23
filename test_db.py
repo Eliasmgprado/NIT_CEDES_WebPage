@@ -22,18 +22,34 @@ def News_db():
                 sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. 
                 Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                 '''
-
+        title= 'Titulo da Noticia'
         now = datetime.utcnow()
-        n1 = News(title='Titulo da Noticia 1', category=cat_id1, body=body, intro=intro,
+        n1 = News(title=title, category=cat_id1, body=body, intro=intro,
                 date=now + timedelta(seconds=1))
-        n2 = News(title='Titulo da Noticia 2', category=cat_id2, body=body, intro=intro,
+        n2 = News(title=title, category=cat_id2, body=body, intro=intro,
                 date=now + timedelta(seconds=100))
-        n3 = News(title='Titulo da Noticia 3', category=cat_id3, body=body, intro=intro,
+        n3 = News(title=title, category=cat_id3, body=body, intro=intro,
                 date=now + timedelta(seconds=500))
-        n4 = News(title='Titulo da Noticia 4', category=cat_id2, body=body, intro=intro,
+        n4 = News(title=title, category=cat_id2, body=body, intro=intro,
                 date=now + timedelta(seconds=1000))
+        n5 = News(title=title, category=cat_id1, body=body, intro=intro,
+                date=now + timedelta(seconds=1200))
+        n6 = News(title=title, category=cat_id2, body=body, intro=intro,
+                date=now + timedelta(seconds=1500))
+        n7 = News(title=title, category=cat_id3, body=body, intro=intro,
+                date=now + timedelta(seconds=2000))
+        n8 = News(title=title, category=cat_id2, body=body, intro=intro,
+                date=now + timedelta(seconds=2200))
+        n9 = News(title=title, category=cat_id1, body=body, intro=intro,
+                date=now + timedelta(seconds=2500))
+        n10 = News(title=title, category=cat_id2, body=body, intro=intro,
+                date=now + timedelta(seconds=3000))
+        n11 = News(title=title, category=cat_id3, body=body, intro=intro,
+                date=now + timedelta(seconds=3200))
+        n12 = News(title=title, category=cat_id2, body=body, intro=intro,
+                date=now + timedelta(seconds=3500))
 
-        db.session.add_all([n1, n2, n3, n4])
+        db.session.add_all([n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12])
         db.session.commit()
 
 def Pub_db():
@@ -46,10 +62,7 @@ def Pub_db():
         auth = Authors.query.all()
         for u in auth:
                 db.session.delete(u)
-        pub_auth = Publication_authors.query.all()
-        for u in pub_auth:
-                db.session.delete(u)
-        
+        db.session.commit()
 
         c1 = Publication_categories(category='Economica')
         c2 = Publication_categories(category='Modelamento')
@@ -75,12 +88,12 @@ def Pub_db():
 
         now = datetime.utcnow()
         p1 = Publications(title='Titulo Publicação1 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id1, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
-                date=now + timedelta(seconds=1))
+                date=now + timedelta(seconds=1), img_dir="/static/imgs/Pub_1_.jpg")
         p2 = Publications(title='Titulo Publicação2 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id2, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
-                date=now + timedelta(seconds=1000))
+                date=now + timedelta(seconds=1000), img_dir="/static/imgs/Pub_2.png")
         
         p3 = Publications(title='Titulo Publicação3 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id3, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
-                date=now + timedelta(seconds=10000))
+                date=now + timedelta(seconds=10000), img_dir="/static/imgs/Pub_3.jpg")
 
         p1.authors.append(auth1)
         p1.authors.append(auth2)
@@ -128,4 +141,4 @@ def Team_db():
 
         db.session.add_all([t1, t2, t3, t4, t5, t6])
         db.session.commit()
-Team_db()
+News_db()

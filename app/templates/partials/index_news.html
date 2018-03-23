@@ -1,6 +1,6 @@
 <section id="NewsCont">
     <div class="container">
-        <a href="#!">
+        <a href="{{ url_for('news') }}">
             <h2 class="display__title h2"> Notícias </h2>  
         </a>
         <div class="row">
@@ -112,7 +112,7 @@
         </div>
         <div class="d-flex w-100 justify-content-end btn-more-div">
             <span class="font-weight-bold blue-text">Mais Notícias</span>
-            <a href="#!" class="btn-floating btn-sm blue-gradient my-0"><i class="fa fa-chevron-right"></i></a>
+            <a href="{{ url_for('news') }}" class="btn-floating btn-sm blue-gradient my-0"><i class="fa fa-chevron-right"></i></a>
         </div>
     </div>
 </section>

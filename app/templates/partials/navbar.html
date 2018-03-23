@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar navbar-txt">
+<nav class="navbar navbar-expand-md navbar-light fixed-top top-nav-collapse navbar-txt">
     <div class="container container-nav">
-        <a class="navbar-brand mb-0 h1 align-items-center d-flex" href="#">
+        <a class="navbar-brand mb-0 h1 align-items-center d-flex" href="{{ url_for('index') }}">
             <img src="/static/LOGOS/cedes_1.png" width="45" height="35" 
             class="d-inline-block align-top mr-2" alt="">
         ICT-NIT-CEDES
@@ -25,7 +25,7 @@
             </div>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#NewsCont">Notícias</a>
+            <a class="nav-link" href="{{ url_for('news') }}">Notícias</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#PublicationCont">Publicações</a>

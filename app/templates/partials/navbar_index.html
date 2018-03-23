@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar navbar-txt">
+        <div class="container container-nav">
+            <a class="navbar-brand mb-0 h1 align-items-center d-flex" href="{{ url_for('index') }}">
+                <img src="/static/LOGOS/cedes_1.png" width="45" height="35" 
+                class="d-inline-block align-top mr-2" alt="">
+            ICT-NIT-CEDES
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#ResearchCont" id="dropdown01" >
+                    Pesquisa
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#!">Tecônica Continetal e Análise de Basias</a>
+                    <a class="dropdown-item" href="#!">Geodinâmica Equatirial e Atlântico Sul</a>
+                    <a class="dropdown-item" href="#!">Geodiversidade e Impactos Ambientais</a>
+                    <a class="dropdown-item" href="#!">Arquitetura da Litosfera e Processos Mineralizantes</a>
+                    <a class="dropdown-item" href="#!">Big Data e Modelos Numéricos em Processos Geológicos</a>
+                    <a class="dropdown-item" href="#!">Fontes Energéticas Alternativas e Minerais do Futuro</a>
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('news') }}">Notícias</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#PublicationCont">Publicações</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#aboutCont">Sobre o CEDES <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#footer">Contato</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    

@@ -5,112 +5,44 @@
             <h2 class="display__title h2"> Publicações </h2>  
         </a>
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="card card-cascade wider hoverable">
-                <div class="card-body">
-                <h6 class="silver-text h7">
-                    {{ publications[0].get_cat() }}
-                    <span class="px-1">|</span>
-                    <time datetime="2018-16-01" itemprop="datePublished">
-                        {{ moment(publications[0].date).format('LL') }}
-                    </time>
-                </h6>
-                <hr class="my-2">
-                <h5 class="card-title">
-                    <a href="#!" class="a-under">
-                    <img class="float-right" src="/static/imgs/Pub_1_.jpg" alt="Card image cap" height="75px" width="75px">
-                    {{ publications[0].title }}
-                    </a>
-                </h5>
-                <p class="card-text text-dark d-block d-md-none d-lg-block">
-                    {{ publications[0].abstract | truncate(190) }}
-                </p>
-                <p class="h7 text-secondary">
+            {% for pub in publications %}
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <div class="card card-cascade wider hoverable">
+                        <div class="card-body">
+                            <h6 class="silver-text h7">
+                                {{ pub.get_cat() }}
+                                <span class="px-1">|</span>
+                                <time datetime="2018-16-01" itemprop="datePublished">
+                                    {{ moment(pub.date).format('LL') }}
+                                </time>
+                            </h6>
+                            <hr class="my-2">
+                            <h5 class="card-title">
+                                <a href="#!" class="a-under">
+                                    <img class="float-right" src="{{ pub.img_dir }}" alt="Card image cap" height="75px" width="75px">
+                                    {{ pub.title }}
+                                </a>
+                            </h5>
+                            <p class="card-text text-dark d-block d-md-none d-lg-block">
+                                {{ pub.abstract | truncate(190) }}
+                            </p>
+                            <p class="h7 text-secondary">
 
-                   {% for author in publications[0].authors.all()[:3] %}
-                        {{ author.abrev }}
-                        {% if not loop.last %}
-                            ,
-                        {% endif %}
-                    {% endfor %}
-                    {% if publications[0].authors.all() | length > 3 %}
-                        ...
-                    {% endif %}
-                </p>
-                
+                                {% for author in pub.authors.all()[:3] %}
+                                    {{ author.abrev }}
+                                    {% if not loop.last %}
+                                        ,
+                                    {% endif %}
+                                {% endfor %}
+                                {% if pub.authors.all() | length > 3 %}
+                                    ...
+                                {% endif %}
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="card card-cascade wider hoverable">
-                <div class="card-body">
-                <h6 class="silver-text h7">
-                    {{ publications[1].get_cat() }}
-                    <span class="px-1">|</span>
-                    <time datetime="2018-14-01" itemprop="datePublished">
-                        {{ moment(publications[1].date).format('LL') }}
-                    </time>
-                </h6>
-                <hr class="my-2">
-                <h5 class="card-title">
-                    <a href="#!" class="a-under">
-                    <img class="float-right" src="/static/imgs/Pub_2.png" alt="Card image cap" height="75px" width="75px">
-                    {{ publications[1].title }}
-                    </a>
-                </h5>
-                <p class="card-text text-dark d-block d-md-none d-lg-block">
-                    {{ publications[1].abstract | truncate(190) }}
-                </p>
-                <p class="h7 text-secondary">
-                    {% for author in publications[1].authors.all()[:3] %}
-                        {{ author.abrev }}
-                        {% if not loop.last %}
-                            ,
-                        {% endif %}
-                    {% endfor %}
-                    {% if publications[1].authors.all() | length > 3 %}
-                        {{" ..."}}
-                    {% endif %}
-                </p>
-                
-                </div>
-            </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <div class="card card-cascade wider hoverable">
-                <div class="card-body">
-                <h6 class="silver-text h7">
-                    {{ publications[2].get_cat() }}
-                    <span class="px-1">|</span>
-                    <time datetime="2018-10-01" itemprop="datePublished">
-                        {{ moment(publications[2].date).format('LL') }}
-                    </time>
-                </h6>
-                <hr class="my-2">
-                <h5 class="card-title">
-                    <a href="#!" class="a-under">
-                    <img class="float-right" src="/static/imgs/Pub_3.jpg" alt="Card image cap" height="75px" width="75px">
-                        {{ publications[2].title }}
-                    </a>
-                </h5>
-                <p class="card-text text-dark d-block d-md-none d-lg-block">
-                    {{ publications[2].abstract | truncate(190) }}
-                </p>
-                <p class="h7 text-secondary">
-                    {% for author in publications[2].authors.all()[:3] %}
-                        {{ author.abrev }}
-                        {% if not loop.last %}
-                            ,
-                        {% endif %}
-                    {% endfor %}
-                    {% if publications[2].authors.all() | length > 3 %}
-                        {{" ..."}}
-                    {% endif %}
-                </p>
-                
-                </div>
-            </div>
-            </div>
+            {% endfor %}
+            
         </div>
         <div class="d-flex w-100 justify-content-end btn-more-div">
             <span class="font-weight-bold blue-text">Mais Publicações</span>

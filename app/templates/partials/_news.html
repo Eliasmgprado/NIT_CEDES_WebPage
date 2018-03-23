@@ -1,118 +1,49 @@
 <section id="NewsCont">
-    <div class="section parallax-top cnt-backgorund-h-one" style="min-height: 25px">
+    <!-- <div class="section parallax-top cnt-backgorund-h-one" style="min-height: 25px">
         
-    </div>
-    <div class="container">
+    </div> -->
+    <div class="container pt-5">
         <a href="#!">
             <h2 class="display__title h2"> Notícias </h2>  
         </a>
+        {% if news.items %}
         <div class="row">
-            <div class="col-md-8 d-flex">
-                <!-- News-1 -->
-                <div class="row mb-3 mr-0">
-                    <article>
-                        <div class="card card-image hoverable of-h view hm-zoom-div">
-                            <div class="hm-zoom-img" style="background-image: url(/static/imgs/news_1.jpg);"></div>
-                                <a href="#!">
-                                    <div class="mask waves-effect waves-light"></div>
-                                </a>
-                                <!-- Content -->
-                                <div class="text-white text-left rgba-black-strong py-5 px-4 card-block">
-                                    <div>
-                                        <h6 class="silver-text">
-                                            {{ news[0].get_cat() }}
-                                            <span class="px-1">|</span>
-                                            <time datetime="{{ news[0].date }}" itemprop="datePublished">
-                                                {{ moment(news[0].date).format('LL') }}
-                                            </time>
-                                        </h6>
-                                        <h3 class="card-title pt-2"><strong>{{ news[0].title }}</strong></h3>
-                                        <p class="text-justify">
-                                            {{ news[0].intro | truncate(512)  }}
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <a href="#!" class="d-flex flex-row-reverse text-info">
-                                            <h5 class="waves-effect d-flex flex-row-reverse">
-                                            <i class="fa fa-chevron-right px-1"></i>
-                                            Ler
-                                            </h5>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Content -->
-                            </div>
-                    </article>
-                </div>
-                <!-- News-1 -->
-            </div>
-            <div class="col-md-4">
-                <!-- News-2 -->
-                <div class="row mb-3 mr-0">
-                    <article>
-                        <div class="card hoverable w-100 view">
-                            <a href="#!">
-                                <div class="mask waves-effect waves-dark"></div>
+        {% for new in news.items %}
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <article>
+                    <div class="card hoverable w-100 view">
+                        <a href="#!">
+                            <div class="mask waves-effect waves-dark"></div>
+                        </a>
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+                        <!-- Content -->
+                        <div class="card-body">
+                            <h6 class="silver-text">
+                                {{ new.get_cat() }}
+                                <span class="px-1">|</span>
+                                <time datetime="2018-10-01" itemprop="datePublished">
+                                    {{ moment(new.date).format('LL') }}
+                                </time>
+                            </h6>
+                            <h4 class="card-title pt-2"><strong>{{ new.title }}</strong></h4>
+                            <p class="text-justify">
+                                {{ new.intro | truncate(150) }}
+                            </p>
+                            <a href="#!" class="d-flex flex-row-reverse text-info">
+                                <h5 class="waves-effect d-flex flex-row-reverse">
+                                    <i class="fa fa-chevron-right px-1 pt-1"></i>
+                                    Ler
+                                </h5>
                             </a>
-                            <!-- Content -->
-                            <div class="card-body">
-                                <h6 class="silver-text">
-                                    {{ news[1].get_cat() }}
-                                    <span class="px-1">|</span>
-                                    <time datetime="2018-12-01" itemprop="datePublished">
-                                        {{ moment(news[1].date).format('LL') }}
-                                    </time>
-                                </h6>
-                                <h4 class="card-title pt-2"><strong>{{ news[1].title }}</strong></h4>
-                                <p class="text-justify">
-                                    {{ news[1].intro | truncate(150) }}
-                                </p>
-                                <a href="#!" class="d-flex flex-row-reverse text-info">
-                                    <h5 class="waves-effect d-flex flex-row-reverse">
-                                        <i class="fa fa-chevron-right px-1 pt-1"></i>
-                                        Ler
-                                    </h5>
-                                </a>
-                            </div>
-                            <!-- Content -->
                         </div>
-                    </article>
-                </div>
-                <!-- News-2 -->
-                <!-- News-3 -->
-                <div class="row mb-3 mr-0">
-                    <article>
-                        <div class="card hoverable w-100 view">
-                            <a href="#!">
-                                <div class="mask waves-effect waves-dark"></div>
-                            </a>
-                            <!-- Content -->
-                            <div class="card-body">
-                                <h6 class="silver-text">
-                                    {{ news[2].get_cat() }}
-                                    <span class="px-1">|</span>
-                                    <time datetime="2018-10-01" itemprop="datePublished">
-                                        {{ moment(news[2].date).format('LL') }}
-                                    </time>
-                                </h6>
-                                <h4 class="card-title pt-2"><strong>{{ news[2].title }}</strong></h4>
-                                <p class="text-justify">
-                                    {{ news[2].intro | truncate(150) }}
-                                </p>
-                                <a href="#!" class="d-flex flex-row-reverse text-info">
-                                    <h5 class="waves-effect d-flex flex-row-reverse">
-                                        <i class="fa fa-chevron-right px-1 pt-1"></i>
-                                        Ler
-                                    </h5>
-                                </a>
-                            </div>
-                            <!-- Content -->
-                        </div>
-                    </article>
-                </div>
-                <!-- News-3 -->
-            </div>
+                        <!-- Content -->
+                    </div>
+                </article>
+            </div> 
+        {% endfor %}  
         </div>
+        {% endif %}      
     </div>
+    
 </section>
 <!-- News -->

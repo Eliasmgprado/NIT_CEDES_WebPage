@@ -38,6 +38,7 @@ class Publications(db.Model):
     abstract = db.Column(db.Text())
     file_dir = db.Column(db.String(256))
     authors = db.relationship('Authors', secondary=pub_authors, backref='publication', lazy='dynamic')
+    img_dir = db.Column(db.String(256))
 
     def get_cat(self):
         return Publication_categories.query.filter_by(id=self.category).first().category

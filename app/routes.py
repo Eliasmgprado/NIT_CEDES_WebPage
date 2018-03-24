@@ -1,8 +1,8 @@
-from flask import render_template, flash, redirect, url_for, request, abort
+from flask import render_template, flash, redirect, url_for, request, abort, send_from_directory
 from app import app
 from slugify import slugify
 from app.models import News, Publications, Team
-
+import os
 
 @app.route('/')
 @app.route('/CPRM.ico')

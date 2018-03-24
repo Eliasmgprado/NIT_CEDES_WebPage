@@ -3,7 +3,12 @@ from app import app
 from slugify import slugify
 from app.models import News, Publications, Team
 
+
 @app.route('/')
+@app.route('/CPRM.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'CPRM.ico', mimetype='image/png')
 @app.route('/index')
 def index():
     news = News.query.order_by(News.date.desc()).limit(3).all()

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 from app import db
 from app.models import News, News_categories, Publications, Publication_categories, Authors, Team
@@ -8,6 +9,17 @@ def News_db():
         news = News.query.all()
         for u in news:
                 db.session.delete(u)
+        news_c = News_categories.query.all()
+        for u in news_c:
+                db.session.delete(u)
+        db.session.commit()
+
+        c1 = News_categories(category='Geocronologia')
+        c2 = News_categories(category='Hidrogeologia')
+        c3 = News_categories(category='Economica') 
+
+        db.session.add_all([c1, c2, c3])
+        db.session.commit()
 
         cat_id1 = News_categories.query.filter_by(category='Geocronologia').first().id
         cat_id2 = News_categories.query.filter_by(category='Hidrogeologia').first().id
@@ -23,6 +35,7 @@ def News_db():
                 Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                 '''
         title= 'Titulo da Noticia'
+
         now = datetime.utcnow()
         n1 = News(title=title, category=cat_id1, body=body, intro=intro,
                 date=now + timedelta(seconds=1))
@@ -71,9 +84,9 @@ def Pub_db():
         db.session.add_all([c1, c2, c3])
         db.session.commit()
 
-        cat_id1 = Publication_categories.cat_id(category='Economica')
-        cat_id2 = Publication_categories.cat_id(category='Modelamento')
-        cat_id3 = Publication_categories.cat_id(category='Tectonica')
+        cat_id1 = Publication_categories.query.filter_by(category='Economica').first().id
+        cat_id2 = Publication_categories.query.filter_by(category='Modelamento').first().id
+        cat_id3 = Publication_categories.query.filter_by(category='Tectonica').first().id
 
         auth1 = Authors(name='Andrew Peter James', abrev='James A.J.')
         auth2 = Authors(name='Bob Dilan', abrev='Dilan B.')
@@ -87,12 +100,12 @@ def Pub_db():
         Some quick example text to build on the card title and make up the bulk of the card's content...'''
 
         now = datetime.utcnow()
-        p1 = Publications(title='Titulo Publicação1 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id1, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
+        p1 = Publications(title='Titulo Publicação1 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação'.decode('utf8'), category=cat_id1, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
                 date=now + timedelta(seconds=1), img_dir="/static/imgs/Pub_1_.jpg")
-        p2 = Publications(title='Titulo Publicação2 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id2, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
+        p2 = Publications(title='Titulo Publicação2 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação'.decode('utf8'), category=cat_id2, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
                 date=now + timedelta(seconds=1000), img_dir="/static/imgs/Pub_2.png")
         
-        p3 = Publications(title='Titulo Publicação3 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id3, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
+        p3 = Publications(title='Titulo Publicação3 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação'.decode('utf8'), category=cat_id3, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
                 date=now + timedelta(seconds=10000), img_dir="/static/imgs/Pub_3.jpg")
 
         p1.authors.append(auth1)
@@ -113,7 +126,7 @@ def Team_db():
         team = Team.query.all()
         for u in team:
                 db.session.delete(u)
-
+        db.session.commit()
         intro = '''
                 Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia.
                 Dmosnin ed osan pojd kaxsax ckdds a dolkcm sd cnoia. 
@@ -142,3 +155,5 @@ def Team_db():
         db.session.add_all([t1, t2, t3, t4, t5, t6])
         db.session.commit()
 News_db()
+Pub_db()
+Team_db()

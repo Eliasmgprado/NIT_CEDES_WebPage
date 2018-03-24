@@ -1,5 +1,6 @@
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, abort
 from app import app
+from slugify import slugify
 from app.models import News, Publications, Team
 
 @app.route('/')
@@ -20,3 +21,10 @@ def news():
     prev_url = url_for('news', page=news.prev_num) \
         if news.has_prev else None
     return render_template('news.html', page=page, news=news, next_url=next_url, prev_url=prev_url)
+
+@app.route('/news/<slug>-<post_id>')
+def news_detail(slug, post_id):
+    new = News.query.filter_by(id=post_id).first_or_404()
+    if not slugify(new.title) == slug:
+        abort(404)
+    return render_template('new.html', new=new)

@@ -1,4 +1,9 @@
 from datetime import datetime
+from sqlalchemy import func
+from sqlalchemy.ext.hybrid import hybrid_property
+from slugify import slugify
+from flask import url_for
+import re
 from app import db
 
 class News(db.Model):
@@ -9,7 +14,13 @@ class News(db.Model):
     intro = db.Column(db.String(512))
     body = db.Column(db.Text())
 
-    
+    @property
+    def slugified_title(self):
+        return slugify(self.title)
+
+    def link(self):
+        return url_for('news_detail', post_id=self.id, slug=self.slugified_title)
+
     def get_cat(self):
         return News_categories.query.filter_by(id=self.category).first().category
     def __repr__(self):

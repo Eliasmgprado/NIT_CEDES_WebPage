@@ -100,12 +100,12 @@ def Pub_db():
         Some quick example text to build on the card title and make up the bulk of the card's content...'''
 
         now = datetime.utcnow()
-        p1 = Publications(title='Titulo Publicação1 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação'.decode('utf8'), category=cat_id1, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
+        p1 = Publications(title='Titulo Publicação1 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id1, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
                 date=now + timedelta(seconds=1), img_dir="/static/imgs/Pub_1_.jpg")
-        p2 = Publications(title='Titulo Publicação2 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação'.decode('utf8'), category=cat_id2, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
+        p2 = Publications(title='Titulo Publicação2 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id2, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
                 date=now + timedelta(seconds=1000), img_dir="/static/imgs/Pub_2.png")
         
-        p3 = Publications(title='Titulo Publicação3 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação'.decode('utf8'), category=cat_id3, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
+        p3 = Publications(title='Titulo Publicação3 Titulo Publicação Titulo Publicação Titulo Publicação Titulo Publicação', category=cat_id3, file_dir='/static/imgs/aaaa.jpg', abstract=intro,
                 date=now + timedelta(seconds=10000), img_dir="/static/imgs/Pub_3.jpg")
 
         p1.authors.append(auth1)

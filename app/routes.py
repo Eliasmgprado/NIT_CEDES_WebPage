@@ -5,16 +5,17 @@ from app.models import News, Publications, Team
 import os
 
 @app.route('/')
-@app.route('/CPRM.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'CPRM.ico', mimetype='image/png')
 @app.route('/index')
 def index():
     news = News.query.order_by(News.date.desc()).limit(3).all()
     publications = Publications.query.order_by(Publications.date.desc()).limit(3)
     team = Team.query.order_by(Team.role.desc())
     return render_template('index.html', news=news, publications=publications, team=team)
+
+@app.route('/CPRM.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'CPRM.ico', mimetype='image/png')
 
 @app.route('/news')
 def news():

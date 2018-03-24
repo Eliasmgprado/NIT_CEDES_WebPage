@@ -8,6 +8,7 @@ Flask-SQLAlchemy==2.3.2
 gunicorn==19.7.1
 html5lib==0.9999999
 psycopg2==2.7.4
+psycopg2-binary
 python-slugify==1.2.4
 SQLAlchemy==1.1.13
 unicodecsv==0.14.1

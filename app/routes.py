@@ -34,3 +34,21 @@ def news_detail(slug, post_id):
     if not slugify(new.title) == slug:
         abort(404)
     return render_template('new.html', new=new)
+
+@app.route('/publications')
+def publications():
+    page = request.args.get('page', 1, type=int)
+    publications = Publications.query.order_by(Publications.update.desc()).paginate(page, app.config['POSTS_PER_PAGE'], False)
+
+    next_url = url_for('publications', page=publications.next_num) \
+        if publications.has_next else None
+    prev_url = url_for('publications', page=publications.prev_num) \
+        if publications.has_prev else None
+    return render_template('publications.html', page=page, pubs=publications, next_url=next_url, prev_url=prev_url)
+
+@app.route('/publications/<slug>-<post_id>')
+def pubs_detail(slug, post_id):
+    publication = Publications.query.filter_by(id=post_id).first_or_404()
+    if not slugify(publication.title) == slug:
+        abort(404)
+    return render_template('publication.html', pub=publication)

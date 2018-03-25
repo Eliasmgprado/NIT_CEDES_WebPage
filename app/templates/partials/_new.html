@@ -1,8 +1,27 @@
-<section id="NewCont">
-    <div class="container pt-5">
-        <h1> {{ new.title }}</h1>
-        <h3> {{ new.intro }} </h3>
-        <p> {{ new.body }}</p>
-    </div>
-</section>
-<!-- News -->
+<div class="container">
+    <section id="NewCont">
+        <article class="article-item">
+            <header>
+                <div class="article__type">
+                    <a href="{{ url_for('news') }}" > Notícias </a>
+                    <div class="article__date">
+                        {{ moment(new.date).format('LL') }}
+                    </div>
+                </div>
+                <h1 class="article-item__title"> {{ new.title }}</h1>
+                <div class="article-item__teaser-text">
+                    {{ new.intro }}
+                </div>
+            </header>
+            <div class="text-center">
+                <img class="img-fluid w100" src="{{ new.imgs_dir[0].img_path }}"></img>
+                <p class="figure__caption text-left">
+                    Legenda da figura aqui. Leg Legenda da figura aqui. enda da figura aqui. Legenda da figura aqui.
+                </p>
+            </div>
+            <div class="article__body">
+                <p> {{ new.body }}</p> 
+            </div>
+        </article>
+    </section>
+</div>

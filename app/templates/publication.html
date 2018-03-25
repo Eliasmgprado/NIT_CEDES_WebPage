@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<header>{% block header %}{% include "partials/navbar.html" %}{% endblock %}</header>
+
+
+{% if pub %}
+    {% include "partials/_pub.html" %}
+{% endif %}
+
+{% endblock %}

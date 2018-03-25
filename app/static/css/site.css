@@ -16,6 +16,11 @@
     font-weight:500;
     font-style:normal}
 
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
 body {
    /* padding-top: 60px; */
    /* padding-bottom: 3rem;   */
@@ -603,3 +608,104 @@ footer.page-footer {
     margin: 0 auto;
 }
 
+.article__type {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    font-size: 17px;
+}
+
+.article__type:before {
+    content: "";
+    width: 65px;
+    height: 2px;
+    border-bottom: 4px solid #0093b5;
+    display: block;
+    margin: 11px 0;
+}
+
+.article__type a {
+    color: inherit;
+}
+.article__type a:hover {
+    color: inherit;
+}
+
+.article__date {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: .9px;
+    color: #1a1a1a;
+    text-transform: none;
+    margin-left: 10px;
+}
+
+.article__date:before {
+    content: "\00b7";
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.article-item__title {
+    max-width: 85%;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+.article-item__teaser-text {
+    max-width: 85%;
+    margin-bottom: 30px;
+    font-style: italic;
+    line-height: 1.6;
+    font-family: Lora,Palatino,Times,Times New Roman,serif;
+    font-size: 20px;
+}
+
+.article__body {
+    margin-bottom: 50px;
+    font-family: Lora,Palatino,Times,Times New Roman,serif;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.article-item {
+    margin: 40px 0;
+}
+
+.figure__caption{
+    font-size: 13px;
+    margin: 10px 0 58px;
+    color: #666;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 5px;
+}
+
+.center_img-helper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 308px;
+}
+
+.center_img-helper img {
+    max-height: 308px;
+}
+
+.icon-pdf-multicolor {
+    margin-right: 6px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.align-right {
+    float: right;
+}
+.text-secondary {
+    color: #2e2e2e !important;
+}

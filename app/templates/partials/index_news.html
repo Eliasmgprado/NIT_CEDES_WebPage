@@ -9,7 +9,7 @@
                 <div class="row mb-3 mr-0">
                     <article>
                         <div class="card card-image hoverable of-h view hm-zoom-div">
-                            <div class="hm-zoom-img" style="background-image: url(/static/imgs/news_1.jpg);"></div>
+                            <div class="hm-zoom-img" style="background-image: url('{{ news[0].imgs_dir[0].img_path }}');"></div>
                                 <a href="{{ news[0].link() }}">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
@@ -17,7 +17,7 @@
                                 <div class="text-white text-left rgba-black-strong py-5 px-4 card-block">
                                     <div>
                                         <h6 class="silver-text">
-                                            {{ news[0].get_cat() }}
+                                            {{ news[0].category.category }}
                                             <span class="px-1">|</span>
                                             <time datetime="{{ news[0].date }}" itemprop="datePublished">
                                                 {{ moment(news[0].date).format('LL') }}
@@ -48,13 +48,13 @@
                 <div class="row mb-3 mr-0">
                     <article>
                         <div class="card hoverable w-100 view">
-                            <a href="#!">
+                            <a href="{{ news[1].link() }}">
                                 <div class="mask waves-effect waves-dark"></div>
                             </a>
                             <!-- Content -->
                             <div class="card-body">
                                 <h6 class="silver-text">
-                                    {{ news[1].get_cat() }}
+                                    {{ news[1].category.category }}
                                     <span class="px-1">|</span>
                                     <time datetime="2018-12-01" itemprop="datePublished">
                                         {{ moment(news[1].date).format('LL') }}
@@ -80,13 +80,13 @@
                 <div class="row mb-3 mr-0">
                     <article>
                         <div class="card hoverable w-100 view">
-                            <a href="#!">
+                            <a href="{{ news[2].link() }}">
                                 <div class="mask waves-effect waves-dark"></div>
                             </a>
                             <!-- Content -->
                             <div class="card-body">
                                 <h6 class="silver-text">
-                                    {{ news[2].get_cat() }}
+                                    {{ news[2].category.category }}
                                     <span class="px-1">|</span>
                                     <time datetime="2018-10-01" itemprop="datePublished">
                                         {{ moment(news[2].date).format('LL') }}

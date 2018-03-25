@@ -28,7 +28,6 @@
                                         <a class="text-dark a-under" href="{{ pub.link() }}"><strong>{{ pub.title }}</strong></a>
                                     </h4>
                                     <p class="h7 text-secondary mb-3">
-
                                         {% for author in pub.authors.all() %}
                                             {{ author.abrev }}
                                             {% if not loop.last %}
@@ -48,8 +47,7 @@
                                     <a class="text-dark a-under" href="{{ pub.file_dir }}" target="_blank">
                                         Baixar PDF    
                                     </a>
-                                </div>
-                                
+                                </div>                              
                             </div>
                             <!-- Content -->
                         </div>
@@ -58,7 +56,6 @@
             </div> 
         {% endfor %}  
         {% endif %}      
-    </div>
-    
+    </div>   
 </section>
 <!-- News -->

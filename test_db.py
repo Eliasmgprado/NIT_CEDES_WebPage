@@ -200,7 +200,7 @@ def Pub_db():
         p1.imgs_dir.append(imgs_p4)
         p2.imgs_dir.append(imgs_p2)
         p3.imgs_dir.append(imgs_p3)
-        p4.imgs_dir.append(imgs_p1)
+        p4.imgs_dir.append(imgs_p1)]
 
         db.session.add_all([p1, p2, p3, p4])
         db.session.commit()

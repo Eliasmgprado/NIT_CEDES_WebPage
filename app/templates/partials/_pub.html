@@ -4,9 +4,7 @@
             <header>
                 <div class="article__type">
                     <a href="{{ url_for('publications') }}" > Publicações </a>
-                    <div class="article__date">
-                        {{ moment(pub.date).format('LL') }}
-                    </div>
+                    
                     <p class="align-right">
                         <svg focusable="false" viewBox="0 0 32 32" class="icon-pdf-multicolor">
                             <path d="M7 .362h17.875l6.763 6.1V31.64H6.948V16z" stroke="#000" stroke-width=".703" fill="#fff"></path>
@@ -19,11 +17,15 @@
                         </a>
                     </p>
                     <div style="clear: both;"></div>
+                    <span> {{ pub.pub_type.pub_type }}</span>
+                    <div class="article__date">
+                        {{ moment(pub.date).format('LL') }}
+                    </div>
                 </div>
                 <h1 class="article-item__title"> {{ pub.title }}</h1>
                 <p class="h7 text-secondary mb-3">
                     {% for author in pub.authors.all() %}
-                        {{ author.abrev }}
+                        {{ author.name }}
                         {% if not loop.last %}
                             ,
                         {% endif %}
@@ -37,7 +39,7 @@
             <div class="text-center">
                 <img class="img-fluid align-middle" src="{{ pub.imgs_dir.all()[0].img_path }}"></img>
                 <p class="figure__caption text-left">
-                    Legenda da figura aqui. Leg Legenda da figura aqui. enda da figura aqui. Legenda da figura aqui.
+                    {{ pub.imgs_dir.all()[0].img_subtitle }}
                 </p>
             </div>
         </article>

@@ -15,10 +15,15 @@ class News(db.Model):
     intro = db.Column(db.String(512))
     body = db.Column(db.Text())
     imgs_dir = db.relationship('News_imgs', backref='news', lazy='dynamic')
+    file_dir = db.Column(db.String(512))
+
 
     @property
     def slugified_title(self):
         return slugify(self.title)
+
+    def body_p(self):
+        return self.body.split('\n')
 
     def link(self):
         return url_for('news_detail', post_id=self.id, slug=self.slugified_title)
@@ -88,6 +93,7 @@ class Publication_imgs(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     pub_id = db.Column(db.Integer, db.ForeignKey('publications.id'))
     img_path = db.Column(db.String(512))
+    img_subtitle = db.Column(db.String(512))
 
     def __repr__(self):
         return '<Publication_imgs {}>'.format(self.img_path) 
